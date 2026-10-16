@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Esquema de Hall · Confección del sistema de interés | Ingeniería de Sistemas UNI</title>
+<meta name="description" content="Objeto de aprendizaje interactivo – Semana 11, Unidad VI: Metodología de trabajo de la Ingeniería de Sistemas. Universidad Nacional de Ingeniería.">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUMAAADNCAMAAAAVIOIpAAADAFBMVEUAAAB7e502PzozMzPp7+1QWVbO19YvRJMXIkIxOnNYXlrDy84XHjAuRI1pdY86Q4QzM2YeIiMySpQ5QntZZa2hpLdeZmkmMUNJSpwyOoMZIBkxMFrc5Od6g7pBQpRDRGJqb7MxMVNCSpMiKTEgKUpJPYWXmqNJQZdMU6QwLE329+8HEBlBQpw5O2TX2e4fIiknLmIoMTBCQ4QgKkNCSp1aYaUHGBJoaK46S5tCQow/PHUYIShqeLcpMFohKjtLVIshKFQ4Q1X39/8zM5nZ3NVSWqMgMSsyOms7Q3IXHjq8w99abbJBQnuKlbNEUp0xOXqkrb5aYZjl7PY5SZRBSoM5Q5wgKSjn5+dCS4wYKSEOGBk5R4ZMT3wnKi8BEQ5JUZxxdbUxM25ET5FCSnvKzOUwMkknMTtJPY8pKUtte5U6UZ0aKCiVoLYyO1o6OmxMWqUnMUo2OkM8PIYoLCsiIkQ4O4xJUZIoKjlDSqI6QotFSFchKRrv7vZ1fbwqKVMyQkHm5u7////t9vVidLZIU29QWIYgIjEUFSc7OnMqOTawuMU7UpYRGBF0eqxQYaYrMWuborwPDh7v7+8ZIiGZmcw7SouuvOPW3uB+e6ZtfXxcaa3MzMxBQnAqKFk6OXtDR2I6QpOZmZkpKUMhITuCi8ZdaHoTGiAJEg8xO1QBBgyKlMlSZq339/cpMyoqOEVVWGlUX4zg5O8iKSIoMVKsrr06O1dwe5c5SUnR1OU8QUWhpcAxOjV2hIRER3BmZpmLlL19hqMyOYrGzeBocarw7/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARFTzOAAAAgnRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8Ap9eGHQAAAAFiS0dEAIgFHUgAAAAEZ0lGZwAAAAcC6JHuAAAADGNtUFBKQ21wMDcxMgAAAANIAHO8AAAorklEQVR4Xu1di1tTV7Z3WopyiU0gtIBRlISxPKS8wpSHiTRXBEYaVBAjlQFlyKVQHlIexqEoPhBshSuWcYrVSYNFram1Ulvt1FHs/cPu2vu8z9nnlXNQeq/r+zQkOWefvX9Za6+1115r7XUTr8goAuuMNvDq/olXGBpnglcYvsLQOALGW3jFh68wNI6A8RYwH56m6BAQ+wf9J/0V4QVdjSku7vkjX3RuLvroufzVa/KbHx6dPv38+ZlD78YlXo2L++EHZjxxHB4MJGz/ecOOP30G/wAYw9LSXUfOvfHGGye3bj1y5MnWkydP/lOdfgY6+c8nT47cv3/k481X43IPPXt4buvWrd9//0/4nyL1VmK/wnj7Tzr6zr95/82PL25+9Pa5778/d+4c9AYGhOjJExkcTuJxnzx57ptvvt8Xz2GYnVY/dfu116anc3JstszMSFFRpjpNT08HBzyehIQj58/vG4ubm5vbPnkhb3GxszMS6UI0Pj6emYOJa0z8Hn8juILwYPL37Kdqtwtb5PUn3Vqz69///uD55mh8cF1enmXDhs7OzMz8/L6+PpvN4ejsDAalPYdRB4Odnb29WXV1H8dxGFZn19s6i4qKWikMO4teJ0PYSRH1JWB4715vb23t+f1vXpyYyD2U+5Ylz/IwEonwLqP/ZG/iNcB+hlsTX0h9wusGdwHXvPgzQq+l7TIXdfaWj9h3/fvNj3/wTQCGlnu3bw8MwOUOh8OGSNIDZtj3gG4DWSw/UnMplmVnhm3IsgkoEgHmiYx+8gkgoUYul8ub5bElJCTUduzzRaO5udtvXTh+ctSSmuoFGlK7/6V/39VgnW3oOPLBu2PR58G81Hv3SiyTQENDQ1VV1693dY0CSTsJo/Z6BwY8vb2XL7/Fw3Ck3DbkevDdd9/Br2ADBnj9dZBHNQKWHliuqbHb7U1H9vnOAIZft1x5/fGVy8DpDKm1Ydb3eO4A0tXeeMPwbELtkQ8O+KLxP1uCXovFAmMKwtQDrOjIyYnAG2mDwdTU1OXl3t6tWy15H/MwDJRn1iUlPXjw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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F4F9; --card:#FFFFFF; --ink:#1A1B3B; --muted:#5A5E7F; --line:#D8DBE8;
+  --uni:#2E2F92; --uni-2:#4547C2; --uni-soft:#E6E7FA;
+  --marker:#FFD23F; --marker-soft:#FFF4C7;
+  --ok:#14875F; --ok-soft:#DDF4EA; --bad:#C83A36; --bad-soft:#FBE3E2; --mid:#B26A00; --mid-soft:#FFF0D6;
+  --grid:rgba(46,47,146,.055);
+  --c1:#2E2F92; --c2:#14875F; --c3:#C2410C; --c4:#7C3AED; --c5:#0E7490; --c6:#BE185D;
+  --r-s:6px; --r-m:12px; --r-l:20px;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#12132A; --card:#1C1E3B; --ink:#ECEDF8; --muted:#A5A8CB; --line:#34375E;
+    --uni:#9A9CFF; --uni-2:#B7B8FF; --uni-soft:#272A55;
+    --marker:#FFD23F; --marker-soft:#3B3418;
+    --ok:#4ADE9B; --ok-soft:#173A2D; --bad:#FF7B76; --bad-soft:#41201F; --mid:#FFB547; --mid-soft:#3F2F14;
+    --grid:rgba(154,156,255,.06);
+    --c1:#9A9CFF; --c2:#4ADE9B; --c3:#FB923C; --c4:#C4A5FF; --c5:#5EE1F0; --c6:#F472B6;
+    color-scheme: dark;
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+body{
+  margin:0; font-family:var(--body); font-size:1.0625rem; line-height:1.6; color:var(--ink);
+  background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px;
+}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--card)}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800}
+h3{font-size:1.3rem;font-weight:700}
+p{margin:0 0 1em}
+a{color:var(--uni)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--marker);outline-offset:2px;border-radius:4px}
+img{max-width:100%}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--card);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:14px;padding:10px 18px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand img{height:34px;width:auto;flex:0 0 auto;border-radius:3px}
+.brand-t{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.brand-t b{font-family:var(--display);font-size:1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand-t span{font-size:.8rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top-spacer{flex:1}
+.meter{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--muted)}
+.meter-bar{width:140px;height:10px;border-radius:99px;background:var(--uni-soft);overflow:hidden}
+.meter-bar i{display:block;height:100%;width:0;background:var(--uni);border-radius:99px;transition:width .5s ease}
+.meter b{color:var(--ink);font-family:var(--display);font-size:1rem}
+.timer{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:99px;padding:4px 6px 4px 12px;font-variant-numeric:tabular-nums;font-size:.9rem}
+.timer button{border:0;background:var(--uni);color:#fff;border-radius:99px;padding:3px 10px;cursor:pointer;font-size:.8rem}
+@media (prefers-color-scheme: dark){.timer button{color:#12132A}}
+.timer.warn{border-color:var(--bad);color:var(--bad)}
+.menu-btn{display:none;border:1px solid var(--line);background:transparent;border-radius:var(--r-s);padding:6px 10px;cursor:pointer}
+
+/* ---------- layout ---------- */
+.layout{display:grid;grid-template-columns:272px minmax(0,1fr);max-width:1320px;margin:0 auto}
+.nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 58px);align-self:start;height:calc(100vh - 58px);overflow:auto;padding:24px 14px 24px 20px}
+.nav ol{list-style:none;margin:0;padding:0;counter-reset:s}
+.nav li{margin:0 0 4px}
+.nav a{display:grid;grid-template-columns:30px 1fr;gap:4px 8px;align-items:center;text-decoration:none;color:var(--ink);padding:8px 10px;border-radius:var(--r-m)}
+.nav a:hover{background:var(--uni-soft)}
+.nav a[aria-current="page"]{background:var(--card);box-shadow:inset 3px 0 0 var(--uni);font-weight:700}
+.nav .n{font-family:var(--display);font-weight:800;color:var(--uni);font-size:1.05rem;grid-row:span 2}
+.nav .lbl{font-size:.95rem;line-height:1.25}
+.nav .sub{display:flex;align-items:center;gap:6px;font-size:.75rem;color:var(--muted)}
+.nav .sub i{flex:1;height:4px;border-radius:9px;background:var(--line);overflow:hidden;position:relative}
+.nav .sub i::after{content:"";position:absolute;inset:0;width:var(--p,0%);background:var(--ok);border-radius:9px;transition:width .4s}
+.nav-foot{margin-top:18px;padding:14px;border:1px dashed var(--line);border-radius:var(--r-m);font-size:.82rem;color:var(--muted)}
+main{padding:28px 32px 80px;min-width:0}
+.page{display:none;max-width:980px}
+.page.on{display:block}
+.page-head{margin-bottom:26px}
+.page-head .kicker{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;color:var(--muted);margin-bottom:6px}
+.page-head .kicker b{background:var(--uni);color:#fff;font-family:var(--display);border-radius:6px;padding:1px 8px}
+@media (prefers-color-scheme: dark){.page-head .kicker b{color:#12132A}}
+.lead{font-size:1.15rem;color:var(--muted);max-width:68ch}
+.prose{max-width:72ch}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:40px;padding-top:20px;border-top:1px solid var(--line)}
+.pager a{display:inline-flex;flex-direction:column;text-decoration:none;color:var(--ink);padding:10px 16px;border:1px solid var(--line);border-radius:var(--r-m);background:var(--card);max-width:48%}
+.pager a small{color:var(--muted)}
+.pager a.next{margin-left:auto;text-align:right}
+.pager a:hover{border-color:var(--uni)}
+
+/* ---------- Hall step track ---------- */
+.track{display:flex;gap:4px;margin:4px 0 22px;flex-wrap:wrap}
+.track span{font-size:.75rem;padding:4px 9px;border-radius:99px;border:1px solid var(--line);color:var(--muted);background:var(--card)}
+.track span.here{background:var(--marker);border-color:var(--marker);color:#1A1B3B;font-weight:700}
+.track span.done{border-color:var(--uni);color:var(--uni)}
+
+/* ---------- content blocks ---------- */
+.note{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:18px 20px;margin:0 0 18px}
+.case{position:relative;background:var(--marker-soft);border:2px solid var(--marker);border-radius:var(--r-m);padding:18px 20px 16px;margin:0 0 24px}
+.case h4{font-size:1rem;margin-bottom:6px}
+.case p:last-child{margin-bottom:0}
+.keys{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:0 0 26px}
+.key{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:14px 16px}
+.key b{display:block;font-family:var(--display);font-size:1.02rem;margin-bottom:4px;color:var(--uni)}
+.key p{margin:0;font-size:.95rem;color:var(--muted)}
+details.more{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:0 18px;margin:0 0 22px}
+details.more summary{cursor:pointer;padding:14px 0;font-weight:700;list-style:none}
+details.more summary::before{content:"+ ";color:var(--uni);font-weight:800}
+details.more[open] summary::before{content:"– "}
+details.more > div{padding:0 0 16px}
+.tbl-wrap{overflow-x:auto;margin:0 0 22px;border:1px solid var(--line);border-radius:var(--r-m);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--uni-soft);font-family:var(--display)}
+tr:last-child td{border-bottom:0}
+td ul{margin:0;padding-left:18px}
+
+/* ---------- hero (home) ---------- */
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:center;margin-bottom:30px}
+.hero h1{font-size:clamp(2rem,3.9vw,3.3rem);overflow-wrap:break-word;font-weight:800;line-height:1.02;letter-spacing:-.025em;margin-bottom:.35em}
+.hero h1 .q{background:linear-gradient(transparent 62%,var(--marker) 62%,var(--marker) 92%,transparent 92%)}
+.hourglass{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);padding:22px}
+.ticket{display:flex;flex-direction:column;gap:8px}
+.ticket .row{display:flex;align-items:center;gap:10px;font-size:.92rem}
+.ticket .row i{flex:0 0 auto;width:12px;height:12px;border-radius:50%;background:var(--line)}
+.ticket .row.wait i{background:var(--mid)}
+.ticket .row.stop i{background:var(--bad)}
+.ticket .row.go i{background:var(--ok)}
+.ticket .bar{height:8px;flex:1;background:var(--uni-soft);border-radius:9px;position:relative;overflow:hidden}
+.ticket .bar::after{content:"";position:absolute;inset:0;width:var(--w);background:var(--c);border-radius:9px}
+.ticket .hrs{font-variant-numeric:tabular-nums;color:var(--muted);width:42px;text-align:right}
+.total-h{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+.total-h b{font-family:var(--display);font-size:2rem;color:var(--bad)}
+.agenda{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 26px}
+.agenda a{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:12px 14px}
+.agenda a:hover{border-color:var(--uni)}
+.agenda .m{font-family:var(--display);font-weight:800;font-size:1.4rem;color:var(--uni)}
+.agenda .m small{font-size:.8rem;font-weight:500;color:var(--muted)}
+.agenda .t{display:block;font-size:.9rem;line-height:1.3}
+.name-box{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 22px}
+.name-box input{flex:1;min-width:220px}
+.obj-list{padding-left:20px}
+.obj-list li{margin-bottom:6px}
+
+/* ---------- inputs & buttons ---------- */
+input[type=text],input[type=number],textarea,select{font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-s);padding:8px 10px;max-width:100%}
+input:focus,textarea:focus,select:focus{border-color:var(--uni);outline:none;box-shadow:0 0 0 3px var(--uni-soft)}
+textarea{width:100%;min-height:70px;resize:vertical}
+.btn{display:inline-flex;align-items:center;gap:6px;border:0;border-radius:var(--r-s);padding:9px 16px;background:var(--uni);color:#fff;font-weight:700;cursor:pointer;transition:transform .08s}
+@media (prefers-color-scheme: dark){.btn{color:#12132A}}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--uni);border:1.5px solid var(--uni)}
+.btn.warm{background:var(--marker);color:#1A1B3B}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+
+/* ---------- activity shell ---------- */
+.act{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);margin:0 0 30px;overflow:hidden}
+.act-h{padding:18px 22px 0;display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px 14px}
+.act-h .tag{font-family:var(--display);font-weight:800;color:#1A1B3B;background:var(--marker);border-radius:6px;padding:2px 9px;font-size:.85rem}
+.act-h h3{flex:1 1 280px;margin:0;font-size:1.25rem}
+.act-meta{display:flex;gap:8px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);width:100%}
+.act-meta span{border:1px solid var(--line);border-radius:99px;padding:1px 9px}
+.act-meta .pts.got{border-color:var(--ok);color:var(--ok);font-weight:700}
+.act-intro{padding:8px 22px 0;margin:0;color:var(--muted);max-width:80ch}
+.act-body{padding:16px 22px}
+.act-foot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between;padding:12px 22px 18px;border-top:1px dashed var(--line)}
+.act-btns{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+.fb{font-size:.95rem;flex:1 1 300px}
+.fb:empty{display:none}
+.fb .msg{display:inline-block;padding:6px 12px;border-radius:var(--r-s)}
+.fb .ok{background:var(--ok-soft);color:var(--ok)}
+.fb .mid{background:var(--mid-soft);color:var(--mid)}
+.fb .bad{background:var(--bad-soft);color:var(--bad)}
+.why{margin:10px 0 0;padding:0;list-style:none;font-size:.9rem}
+.why li{padding:6px 10px;border-left:3px solid var(--bad);background:var(--bad-soft);margin-bottom:6px;border-radius:0 6px 6px 0}
+
+/* chips / sort */
+.pool{display:flex;flex-wrap:wrap;gap:8px;min-height:54px;padding:10px;border:2px dashed var(--line);border-radius:var(--r-m);margin-bottom:14px}
+.pool:empty::after{content:"¡Todas las tarjetas están ubicadas! Presiona «Comprobar».";color:var(--muted);font-size:.9rem;align-self:center}
+.chip{border:1.5px solid var(--line);background:var(--card);border-radius:10px;padding:7px 12px;cursor:grab;text-align:left;font-size:.93rem;line-height:1.3;box-shadow:0 1px 0 var(--line);touch-action:manipulation}
+.chip:hover{border-color:var(--uni)}
+.chip.sel{border-color:var(--uni);background:var(--uni-soft);box-shadow:0 0 0 3px var(--uni-soft)}
+.chip.ok{border-color:var(--ok);background:var(--ok-soft)}
+.chip.bad{border-color:var(--bad);background:var(--bad-soft)}
+.buckets{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.buckets.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.bucket{border:1.5px solid var(--line);border-radius:var(--r-m);background:var(--paper);display:flex;flex-direction:column;cursor:pointer;min-height:120px}
+.bucket.hot,.picking .bucket:hover{border-color:var(--uni);background:var(--uni-soft)}
+.bucket-h{padding:9px 12px;font-family:var(--display);font-weight:700;border-bottom:1px solid var(--line);font-size:.98rem}
+.bucket-h small{display:block;font-family:var(--body);font-weight:400;color:var(--muted);font-size:.78rem}
+.drop{display:flex;flex-wrap:wrap;gap:6px;padding:10px;flex:1;align-content:flex-start}
+.axis-wrap{position:relative}
+.axis-y,.axis-x{font-size:.78rem;color:var(--muted)}
+.axis-x{text-align:center;margin-top:6px}
+.axis-y{position:absolute;left:-6px;top:50%;transform:translate(-100%,-50%) rotate(-90deg);transform-origin:right center;white-space:nowrap}
+
+/* order */
+.olist{list-style:none;margin:0;padding:0;counter-reset:o}
+.olist li{display:flex;align-items:center;gap:10px;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-m);padding:8px 10px;margin-bottom:8px;cursor:grab;counter-increment:o}
+.olist li::before{content:counter(o);font-family:var(--display);font-weight:800;color:var(--uni);width:26px;text-align:center}
+.olist li .tx{flex:1}
+.olist li .mv{display:flex;gap:4px}
+.olist li .mv button{border:1px solid var(--line);background:var(--card);border-radius:6px;width:32px;height:32px;cursor:pointer}
+.olist li.drag{opacity:.4}
+.olist li.ok{border-color:var(--ok);background:var(--ok-soft)}
+.olist li.bad{border-color:var(--bad);background:var(--bad-soft)}
+
+/* match */
+.match{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px}
+.match .col{display:flex;flex-direction:column;gap:8px}
+.match .col h4{font-size:.9rem;color:var(--muted);margin:0 0 2px;font-family:var(--body)}
+.mi{border:1.5px solid var(--line);background:var(--paper);border-radius:10px;padding:9px 12px;text-align:left;cursor:pointer;line-height:1.35;font-size:.93rem;position:relative}
+.mi.sel{border-color:var(--uni);box-shadow:0 0 0 3px var(--uni-soft)}
+.mi[data-pair]{border-left-width:7px}
+.mi.ok{background:var(--ok-soft)}
+.mi.bad{background:var(--bad-soft)}
+
+/* mcq */
+.q{margin:0 0 20px}
+.q:last-child{margin-bottom:0}
+.q-t{font-weight:700;margin-bottom:8px}
+.q-t span{color:var(--uni);font-family:var(--display);margin-right:6px}
+.opts{display:grid;gap:8px}
+.opts.row{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+.opt{border:1.5px solid var(--line);background:var(--paper);border-radius:10px;padding:9px 12px;text-align:left;cursor:pointer;line-height:1.35}
+.opt:hover:not([disabled]){border-color:var(--uni)}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
+.opt[disabled]{cursor:default}
+.q-fb{font-size:.9rem;margin-top:8px;color:var(--muted);padding-left:10px;border-left:3px solid var(--line)}
+.q-fb.ok{border-color:var(--ok)}.q-fb.bad{border-color:var(--bad)}
+
+/* fill */
+.fill{line-height:2.3;font-size:1.03rem}
+.fill select{padding:3px 6px;margin:0 2px;font-weight:700;color:var(--uni)}
+.fill select.ok{border-color:var(--ok);background:var(--ok-soft)}
+.fill select.bad{border-color:var(--bad);background:var(--bad-soft)}
+
+/* five whys */
+.whys{display:flex;flex-direction:column;gap:10px}
+.why-step{border:1.5px solid var(--line);border-radius:var(--r-m);padding:12px 14px;background:var(--paper)}
+.why-step .lvl{font-family:var(--display);font-weight:800;color:var(--uni);font-size:.9rem}
+.why-step .st{font-weight:700;margin:2px 0 8px}
+.why-root{border:2px solid var(--ok);background:var(--ok-soft);border-radius:var(--r-m);padding:14px}
+
+/* cube */
+.cube-zone{display:grid;grid-template-columns:minmax(260px,1fr) minmax(0,1.1fr);gap:22px;align-items:center;margin:0 0 26px}
+.stage{height:360px;perspective:900px;display:grid;place-items:center;cursor:grab;touch-action:none;user-select:none;background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);position:relative;overflow:hidden}
+.stage:active{cursor:grabbing}
+.stage .hint{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.78rem;color:var(--muted)}
+.cube{width:190px;height:190px;position:relative;margin-bottom:30px;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.cube.free{transition:none}
+.face{position:absolute;inset:0;border:2px solid var(--uni);display:flex;align-items:flex-end;justify-content:center;padding:8px;font-family:var(--display);font-weight:800;font-size:1rem;color:var(--uni);cursor:pointer;backface-visibility:visible}
+.face.f-log{transform:translateZ(95px);background:repeating-linear-gradient(90deg,var(--uni-soft) 0 calc(100%/7 - 2px),var(--uni) calc(100%/7 - 2px) calc(100%/7))}
+.face.f-tmp{transform:rotateY(90deg) translateZ(95px);background:repeating-linear-gradient(90deg,var(--marker-soft) 0 calc(100%/5 - 2px),var(--marker) calc(100%/5 - 2px) calc(100%/5));color:var(--ink)}
+.face.f-con{transform:rotateX(90deg) translateZ(95px);background:repeating-linear-gradient(0deg,var(--ok-soft) 0 calc(100%/4 - 2px),var(--ok) calc(100%/4 - 2px) calc(100%/4));color:var(--ok);align-items:center}
+.face.f-b{transform:rotateY(180deg) translateZ(95px);background:var(--uni-soft);opacity:.55}
+.face.f-l{transform:rotateY(-90deg) translateZ(95px);background:var(--marker-soft);opacity:.55}
+.face.f-d{transform:rotateX(-90deg) translateZ(95px);background:var(--ok-soft);opacity:.55}
+.face span{background:var(--card);border-radius:6px;padding:2px 8px}
+.dims{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.dims button{border:1.5px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px;cursor:pointer;font-weight:700}
+.dims button[aria-pressed="true"]{background:var(--ink);color:var(--card);border-color:var(--ink)}
+.dim-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:16px 18px;min-height:220px}
+.dim-panel ol,.dim-panel ul{padding-left:20px;margin:6px 0 0}
+.seen{font-size:.8rem;color:var(--muted);margin-top:8px}
+
+/* builder */
+.builder{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-bottom:12px}
+.builder label{display:flex;flex-direction:column;gap:4px;font-size:.85rem;color:var(--muted)}
+.builder select,.builder input{width:100%}
+.preview{background:var(--uni-soft);border-radius:var(--r-m);padding:12px 14px;font-weight:700;margin-bottom:12px;min-height:48px}
+.olog{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-direction:column;gap:8px}
+.olog li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.93rem}
+.olog li small{display:block;color:var(--muted)}
+
+/* brainstorm */
+.bs-top{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.bs-clock{font-family:var(--display);font-weight:800;font-size:1.8rem;font-variant-numeric:tabular-nums;color:var(--uni);min-width:90px}
+.bs-in{display:flex;gap:8px;margin-bottom:12px}
+.bs-in input{flex:1}
+.notes{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sticky{background:var(--marker-soft);border:1px solid var(--marker);border-radius:4px;padding:10px;font-size:.9rem;min-height:80px;position:relative;line-height:1.3;word-break:break-word}
+.sticky:nth-child(3n+2){background:var(--uni-soft);border-color:var(--uni-2)}
+.sticky:nth-child(3n){background:var(--ok-soft);border-color:var(--ok)}
+.sticky button{position:absolute;top:2px;right:4px;border:0;background:transparent;cursor:pointer;color:var(--muted);font-size:1rem}
+.count-ring{font-size:.9rem;color:var(--muted)}
+
+/* scamper */
+.scamper{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+.wheel-box{position:relative;width:220px;height:220px}
+.wheel{width:220px;height:220px;border-radius:50%;position:relative;transition:transform 2.6s cubic-bezier(.15,.85,.2,1);border:4px solid var(--ink)}
+.wheel span{position:absolute;left:50%;top:50%;font-family:var(--display);font-weight:800;font-size:1.3rem;color:#fff;transform-origin:0 0}
+.pin{position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-top:22px solid var(--ink);z-index:2}
+.letters{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.letters b{width:30px;height:30px;display:grid;place-items:center;border-radius:6px;border:1.5px solid var(--line);font-family:var(--display)}
+.letters b.done{background:var(--ok);border-color:var(--ok);color:#fff}
+.sc-card{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-m);padding:14px}
+.sc-card h4{font-size:1.15rem;margin-bottom:4px}
+
+/* morph */
+.morph{overflow-x:auto}
+.morph table{min-width:640px}
+.morph td.f{font-weight:700;background:var(--uni-soft);font-family:var(--display);width:170px}
+.morph td.m{cursor:pointer;text-align:center;transition:background .15s}
+.morph td.m:hover{background:var(--marker-soft)}
+.morph td.m.on{background:var(--marker);color:#1A1B3B;font-weight:700}
+.morph td.m .dots{display:flex;gap:3px;justify-content:center;margin-top:3px}
+.morph td.m .dots i{width:8px;height:8px;border-radius:50%}
+.combo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}
+.combo .big{font-family:var(--display);font-weight:800;font-size:1.6rem;color:var(--uni)}
+.alts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:10px}
+.alt{border:1.5px solid var(--line);border-radius:var(--r-m);padding:10px 12px;background:var(--paper);font-size:.88rem}
+.alt h4{font-size:1rem;margin-bottom:4px;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.alt h4 button{border:0;background:transparent;cursor:pointer;color:var(--muted)}
+.alt ul{margin:0;padding-left:18px}
+
+/* mcm */
+.mcm input[type=number]{width:72px}
+.mcm select{min-width:64px}
+.mcm .sum{font-weight:700}
+.mcm .sum.bad{color:var(--bad)}.mcm .sum.ok{color:var(--ok)}
+.bars{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+.barrow{display:grid;grid-template-columns:minmax(110px,180px) 1fr 52px;gap:10px;align-items:center;font-size:.9rem}
+.barrow .b{height:22px;background:var(--uni-soft);border-radius:6px;overflow:hidden}
+.barrow .b i{display:block;height:100%;background:var(--uni);transition:width .5s}
+.barrow.win .b i{background:var(--ok)}
+.barrow b{font-variant-numeric:tabular-nums;text-align:right}
+
+/* crossword */
+.cw-wrap{display:grid;grid-template-columns:auto minmax(240px,1fr);gap:22px;align-items:start}
+.cw-scroll{overflow-x:auto;max-width:100%}
+.cw{display:grid;gap:2px;width:max-content}
+.cw .c{width:34px;height:34px;position:relative}
+.cw .c.x{background:transparent}
+.cw .c input{width:100%;height:100%;padding:0;text-align:center;text-transform:uppercase;font-family:var(--display);font-weight:700;font-size:1.05rem;border-radius:4px;border:1.5px solid var(--uni);background:var(--card)}
+.cw .c input.hl{background:var(--marker-soft)}
+.cw .c input.ok{background:var(--ok-soft);border-color:var(--ok)}
+.cw .c input.bad{background:var(--bad-soft);border-color:var(--bad)}
+.cw .c sup{position:absolute;top:1px;left:3px;font-size:.6rem;color:var(--muted);pointer-events:none;z-index:1}
+.clues h4{font-size:1rem;margin:0 0 6px}
+.clues ol{list-style:none;padding:0;margin:0 0 14px;font-size:.92rem}
+.clues li{padding:4px 6px;border-radius:6px;cursor:pointer}
+.clues li:hover{background:var(--uni-soft)}
+.clues li b{color:var(--uni);margin-right:6px}
+.clues li.solved{text-decoration:line-through;color:var(--muted)}
+
+/* word search */
+.ws-wrap{display:grid;grid-template-columns:auto minmax(200px,1fr);gap:22px;align-items:start}
+.ws{display:grid;gap:3px;touch-action:none;user-select:none;width:max-content;max-width:100%}
+.ws span{width:32px;height:32px;display:grid;place-items:center;font-family:var(--display);font-weight:700;border-radius:6px;background:var(--paper);cursor:pointer;font-size:1rem}
+.ws span.cur{background:var(--marker)!important;color:#1A1B3B}
+.ws span.found{color:#fff}
+.wlist{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.wlist li{border:1.5px solid var(--line);border-radius:99px;padding:3px 12px;font-size:.88rem;font-weight:700}
+.wlist li.found{text-decoration:line-through;border-color:var(--ok);color:var(--ok)}
+
+/* checklist (guía) */
+.guide-act{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);padding:20px 22px;margin:0 0 20px}
+.guide-act h3{margin-bottom:8px}
+.guide-act ul{list-style:none;padding:0;margin:10px 0 0}
+.guide-act li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-top:1px dashed var(--line)}
+.guide-act li input{margin-top:6px;width:18px;height:18px;accent-color:var(--uni);flex:0 0 auto}
+
+/* result */
+.res-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-l);padding:24px;margin:0 0 22px}
+.res-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-end;margin-bottom:16px}
+.grade{font-family:var(--display);font-weight:800;font-size:4rem;line-height:1;color:var(--uni)}
+.grade small{font-size:1.2rem;color:var(--muted);font-weight:500}
+.biblio li{margin-bottom:8px}
+
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,calc(100% + 60px));background:var(--ink);color:var(--card);padding:10px 18px;border-radius:99px;font-weight:700;z-index:80;transition:transform .35s cubic-bezier(.2,.8,.2,1);max-width:90vw;text-align:center}
+.toast{visibility:hidden}.toast.show{transform:translate(-50%,0);visibility:visible}
+
+/* ---------- responsive ---------- */
+@media (max-width: 980px){
+  .layout{grid-template-columns:1fr}
+  .menu-btn{display:inline-block}
+  .nav{position:fixed;top:calc(env(safe-area-inset-top,0px) + 56px);left:0;bottom:0;width:290px;height:auto;background:var(--card);z-index:45;transform:translateX(-105%);transition:transform .25s;border-right:1px solid var(--line);box-shadow:8px 0 30px rgba(0,0,0,.12)}
+  .nav.open{transform:none}
+  .meter-bar{width:80px}
+  main{padding:22px 16px 70px}
+  .hero,.cube-zone,.cw-wrap,.ws-wrap{grid-template-columns:1fr}
+}
+@media (max-width: 640px){
+  .brand-t,.meter span.lbl{display:none}
+  .timer .tlabel{display:none}
+  .buckets.grid2{grid-template-columns:1fr}
+  .match{grid-template-columns:1fr}
+  .scamper{grid-template-columns:1fr;justify-items:center}
+  .act-h,.act-intro,.act-body,.act-foot{padding-left:14px;padding-right:14px}
+  .cw .c{width:27px;height:27px}.cw .c input{font-size:.85rem}
+  .ws span{width:25px;height:25px;font-size:.85rem}
+  .axis-y{display:none}
+}
+@media (prefers-reduced-motion: reduce){
+  *{transition:none!important;animation:none!important}
+}
+@media print{
+  .topbar,.nav,.pager,.act,.no-print,.toast{display:none!important}
+  body{background:#fff;color:#000}
+  .page{display:none!important}
+  #resultado{display:block!important}
+  main{padding:0}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir índice" aria-expanded="false">☰</button>
+  <div class="brand">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUMAAADNCAMAAAAVIOIpAAADAFBMVEUAAAB7e502PzozMzPp7+1QWVbO19YvRJMXIkIxOnNYXlrDy84XHjAuRI1pdY86Q4QzM2YeIiMySpQ5QntZZa2hpLdeZmkmMUNJSpwyOoMZIBkxMFrc5Od6g7pBQpRDRGJqb7MxMVNCSpMiKTEgKUpJPYWXmqNJQZdMU6QwLE329+8HEBlBQpw5O2TX2e4fIiknLmIoMTBCQ4QgKkNCSp1aYaUHGBJoaK46S5tCQow/PHUYIShqeLcpMFohKjtLVIshKFQ4Q1X39/8zM5nZ3NVSWqMgMSsyOms7Q3IXHjq8w99abbJBQnuKlbNEUp0xOXqkrb5aYZjl7PY5SZRBSoM5Q5wgKSjn5+dCS4wYKSEOGBk5R4ZMT3wnKi8BEQ5JUZxxdbUxM25ET5FCSnvKzOUwMkknMTtJPY8pKUtte5U6UZ0aKCiVoLYyO1o6OmxMWqUnMUo2OkM8PIYoLCsiIkQ4O4xJUZIoKjlDSqI6QotFSFchKRrv7vZ1fbwqKVMyQkHm5u7////t9vVidLZIU29QWIYgIjEUFSc7OnMqOTawuMU7UpYRGBF0eqxQYaYrMWuborwPDh7v7+8ZIiGZmcw7SouuvOPW3uB+e6ZtfXxcaa3MzMxBQnAqKFk6OXtDR2I6QpOZmZkpKUMhITuCi8ZdaHoTGiAJEg8xO1QBBgyKlMlSZq339/cpMyoqOEVVWGlUX4zg5O8iKSIoMVKsrr06O1dwe5c5SUnR1OU8QUWhpcAxOjV2hIRER3BmZpmLlL19hqMyOYrGzeBocarw7/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARFTzOAAAAgnRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8Ap9eGHQAAAAFiS0dEAIgFHUgAAAAEZ0lGZwAAAAcC6JHuAAAADGNtUFBKQ21wMDcxMgAAAANIAHO8AAAorklEQVR4Xu1di1tTV7Z3WopyiU0gtIBRlISxPKS8wpSHiTRXBEYaVBAjlQFlyKVQHlIexqEoPhBshSuWcYrVSYNFram1Ulvt1FHs/cPu2vu8z9nnlXNQeq/r+zQkOWefvX9Za6+1115r7XUTr8goAuuMNvDq/olXGBpnglcYvsLQOALGW3jFh68wNI6A8RYwH56m6BAQ+wf9J/0V4QVdjSku7vkjX3RuLvroufzVa/KbHx6dPv38+ZlD78YlXo2L++EHZjxxHB4MJGz/ecOOP30G/wAYw9LSXUfOvfHGGye3bj1y5MnWkydP/lOdfgY6+c8nT47cv3/k481X43IPPXt4buvWrd9//0/4nyL1VmK/wnj7Tzr6zr95/82PL25+9Pa5778/d+4c9AYGhOjJExkcTuJxnzx57ptvvt8Xz2GYnVY/dfu116anc3JstszMSFFRpjpNT08HBzyehIQj58/vG4ubm5vbPnkhb3GxszMS6UI0Pj6emYOJa0z8Hn8juILwYPL37Kdqtwtb5PUn3Vqz69///uD55mh8cF1enmXDhs7OzMz8/L6+PpvN4ejsDAalPYdRB4Odnb29WXV1H8dxGFZn19s6i4qKWikMO4teJ0PYSRH1JWB4715vb23t+f1vXpyYyD2U+5Ylz/IwEonwLqP/ZG/iNcB+hlsTX0h9wusGdwHXvPgzQq+l7TIXdfaWj9h3/fvNj3/wTQCGlnu3bw8MwOUOh8OGSNIDZtj3gG4DWSw/UnMplmVnhm3IsgkoEgHmiYx+8gkgoUYul8ub5bElJCTUduzzRaO5udtvXTh+ctSSmuoFGlK7/6V/39VgnW3oOPLBu2PR58G81Hv3SiyTQENDQ1VV1693dY0CSTsJo/Z6BwY8vb2XL7/Fw3Ck3DbkevDdd9/Br2ADBnj9dZBHNQKWHliuqbHb7U1H9vnOAIZft1x5/fGVy8DpDKm1Ydb3eO4A0tXeeMPwbELtkQ8O+KLxP1uCXovFAmMKwtQDrOjIyYnAG2mDwdTU1OXl3t6tWy15H/MwDJRn1iUlPXjw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" alt="Logo UNI">
+    <div class="brand-t"><b>Ingeniería de Sistemas · Semana 11</b><span>UNI · Facultad de Ciencias y Sistemas · Departamento de Informática</span></div>
+  </div>
+  <div class="top-spacer"></div>
+  <div class="meter" title="Puntos acumulados en las actividades"><span class="lbl">Avance</span><div class="meter-bar"><i id="meterFill"></i></div><b id="meterTxt">0%</b></div>
+  <div class="timer" id="timer"><span class="tlabel">Clase</span><span id="timerTxt">2:00:00</span><button id="timerBtn" type="button">Iniciar</button></div>
+</header>
+
+<div class="layout">
+  <nav class="nav" id="nav" aria-label="Índice del tema"><ol id="navList"></ol>
+    <div class="nav-foot">Tu avance se guarda en este navegador. Puedes cerrar la página y continuar luego en el mismo equipo.</div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ================= 1. INICIO ================= -->
+  <section class="page" id="inicio" data-title="Inicio y caso de estudio">
+    <div class="hero">
+      <div>
+        <h1>¿Por qué una microfinanciera tarda <span class="q">72 horas</span> en decir «sí»?</h1>
+        <p class="lead">Hoy vamos a responderlo como lo haría un ingeniero de sistemas: aplicando las tres primeras etapas del Esquema de Hall —determinar el problema, seleccionar objetivos y sintetizar alternativas— a un caso real de nuestra región.</p>
+      </div>
+      <div class="hourglass" aria-label="Recorrido actual de una solicitud de crédito">
+        <div class="ticket">
+          <div class="row go"><i></i><span style="flex:0 0 150px">Recepción en ventanilla</span><span class="bar" style="--w:6%;--c:var(--ok)"></span><span class="hrs">2 h</span></div>
+          <div class="row wait"><i></i><span style="flex:0 0 150px">Revisión manual del expediente</span><span class="bar" style="--w:25%;--c:var(--mid)"></span><span class="hrs">18 h</span></div>
+          <div class="row wait"><i></i><span style="flex:0 0 150px">Consulta a central de riesgo</span><span class="bar" style="--w:17%;--c:var(--mid)"></span><span class="hrs">12 h</span></div>
+          <div class="row stop"><i></i><span style="flex:0 0 150px">Espera del comité de crédito</span><span class="bar" style="--w:50%;--c:var(--bad)"></span><span class="hrs">36 h</span></div>
+          <div class="row go"><i></i><span style="flex:0 0 150px">Llamada al cliente</span><span class="bar" style="--w:6%;--c:var(--ok)"></span><span class="hrs">4 h</span></div>
+        </div>
+        <div class="total-h"><span>Tiempo promedio de aprobación</span><b>72 h</b></div>
+      </div>
+    </div>
+
+    <div class="case">
+      <h4>Caso de la clase: CrediChontales</h4>
+      <p>CrediChontales es una microfinanciera (ficticia) con sucursales en Juigalpa, Acoyapa y Santo Tomás. Aprobar una solicitud de crédito le toma en promedio 72 horas. Los clientes se quejan, algunos se van con la competencia y los oficiales de crédito dicen que «el sistema es lento». La gerencia nos contrata como equipo de ingeniería de sistemas. Usaremos este caso en todas las actividades de la página.</p>
+    </div>
+
+    <h3>Antes de empezar, escribe tu nombre</h3>
+    <div class="name-box">
+      <input type="text" id="studentName" placeholder="Nombre y apellidos" autocomplete="name">
+      <input type="text" id="studentGroup" placeholder="Grupo de trabajo (opcional)" style="max-width:220px;min-width:160px">
+      <button class="btn" id="saveName" type="button">Guardar</button>
+    </div>
+
+    <h3>Ruta de la clase (≈ 2 horas)</h3>
+    <div class="agenda" id="agenda"></div>
+
+    <details class="more">
+      <summary>Generalidades: unidad, objetivos y contenidos</summary>
+      <div>
+        <p><b>Unidad VI: Metodología de trabajo de la Ingeniería de Sistemas</b></p>
+        <p><b>Objetivos particulares</b></p>
+        <ul class="obj-list">
+          <li>Comprender los pasos de aplicación de las diferentes metodologías de trabajo de la Ingeniería de Sistemas, considerando su importancia y aporte en el diseño de sistemas óptimos como resultado del análisis de problemas complejos.</li>
+          <li>Aplicar la metodología de trabajo de la ingeniería de sistemas en el diseño de sistemas óptimos, desde una perspectiva sistémica.</li>
+          <li>Asumir con creatividad la aplicación de la metodología de trabajo de la ingeniería de sistemas en el estudio de sistemas complejos.</li>
+        </ul>
+        <p><b>Contenidos</b>: 1. Confección del sistema de interés → 1.1 Esquema de Hall → 1.1.1 Determinación del problema · 1.1.2 Selección de los objetivos · 1.1.3 Síntesis del sistema.</p>
+        <p style="margin:0">Docente: Víctor Manuel Díaz Suárez · Chontales, Nicaragua · 17 de octubre de 2026</p>
+      </div>
+    </details>
+
+    <div class="note prose">
+      <p style="margin:0">El estudio de la confección del sistema de interés establece los fundamentos sobre los cuales se construirá toda la solución de ingeniería. La determinación precisa del problema, la selección adecuada de objetivos y la síntesis conceptual del sistema son fases conceptualmente separadas, pero interdependientes: un error en una se arrastra a las siguientes.</p>
+    </div>
+  </section>
+
+  <!-- ================= 2. CONFECCIÓN ================= -->
+  <section class="page" id="confeccion" data-title="Confección del sistema de interés">
+    <div class="page-head">
+      <div class="kicker"><b>3.1</b> Contenido</div>
+      <h2>Confección del sistema de interés</h2>
+      <p class="lead">Es la fase inicial de la metodología de Arthur D. Hall: decidir con precisión qué está dentro del sistema que vamos a estudiar y qué queda en su entorno.</p>
+    </div>
+    <div class="keys">
+      <div class="key"><b>Delimitar</b><p>Definir qué elementos, procesos y actores forman parte del sistema y cuáles se tratan como entorno.</p></div>
+      <div class="key"><b>Frontera</b><p>El límite que separa el sistema de su contexto. Lo que está fuera influye, pero no lo controlamos.</p></div>
+      <div class="key"><b>Interacciones</b><p>Hay que entender cómo el sistema intercambia entradas y salidas con su entorno.</p></div>
+      <div class="key"><b>Riesgo</b><p>Una definición ambigua produce análisis dispersos, diseños incompletos y soluciones que no atacan el problema central.</p></div>
+    </div>
+    <div data-act="a1"></div>
+    <div data-act="a2"></div>
+  </section>
+
+  <!-- ================= 3. HALL ================= -->
+  <section class="page" id="hall" data-title="Esquema de Hall">
+    <div class="page-head">
+      <div class="kicker"><b>3.1.1</b> Contenido</div>
+      <h2>El Esquema de Hall: tres dimensiones a la vez</h2>
+      <p class="lead">Hall propone un marco tridimensional para gestionar la complejidad de los proyectos de sistemas. Gira el cubo o toca cada dimensión para explorarla.</p>
+    </div>
+    <div class="cube-zone">
+      <div class="stage" id="stage" aria-label="Cubo de Hall: arrastra para girarlo">
+        <div class="cube" id="cube">
+          <div class="face f-log" data-dim="log"><span>Lógica · 7 etapas</span></div>
+          <div class="face f-tmp" data-dim="tmp"><span>Temporal · ciclo de vida</span></div>
+          <div class="face f-con" data-dim="con"><span>Conocimiento</span></div>
+          <div class="face f-b"></div><div class="face f-l"></div><div class="face f-d"></div>
+        </div>
+        <div class="hint">Arrastra para girar · toca una cara</div>
+      </div>
+      <div>
+        <div class="dims" role="group" aria-label="Dimensiones">
+          <button type="button" data-dim="log" aria-pressed="true">Lógica</button>
+          <button type="button" data-dim="tmp" aria-pressed="false">Temporal</button>
+          <button type="button" data-dim="con" aria-pressed="false">Conocimiento</button>
+        </div>
+        <div class="dim-panel" id="dimPanel" aria-live="polite"></div>
+        <div class="seen" id="dimSeen"></div>
+      </div>
+    </div>
+    <div class="note prose"><p style="margin:0">La interacción de las tres dimensiones convierte al esquema en una herramienta poderosa: el proceso <b>no es una simple secuencia lineal</b>, sino un esfuerzo integral, iterativo y adaptativo.</p></div>
+    <div data-act="a3"></div>
+    <div data-act="a4"></div>
+    <div data-act="a5"></div>
+  </section>
+
+  <!-- ================= 4. PROBLEMA ================= -->
+  <section class="page" id="problema" data-title="Determinación del problema">
+    <div class="page-head">
+      <div class="kicker"><b>3.1.1.1</b> Etapa 1 de la dimensión lógica</div>
+      <h2>Determinación del problema</h2>
+      <div class="track" data-step="1"></div>
+      <p class="lead">Es la etapa más crítica: un problema mal definido conduce inevitablemente a una solución incorrecta o insuficiente. Hay que ir más allá de los síntomas y descubrir las causas raíz y a los stakeholders involucrados.</p>
+    </div>
+    <div class="keys">
+      <div class="key"><b>Entrevistas</b><p>Estructuradas y no estructuradas, con usuarios, clientes y otras partes interesadas.</p></div>
+      <div class="key"><b>Observación directa</b><p>Ver el sistema actual funcionando para hallar ineficiencias y comportamientos no documentados.</p></div>
+      <div class="key"><b>Documentos de contexto</b><p>Capturan la situación actual, sus dolores principales y las oportunidades de mejora.</p></div>
+      <div class="key"><b>Necesidades</b><p>Distinguir lo que los usuarios dicen querer (explícito) de lo que realmente necesitan (implícito).</p></div>
+    </div>
+    <div class="note prose"><p style="margin:0">Según Hall, el problema real suele estar <b>oscurecido</b> por percepciones preconcebidas o por la complejidad de las interacciones. El resultado de esta etapa es una <b>declaración concisa y bien fundamentada del problema</b>.</p></div>
+    <div data-act="a6"></div>
+    <div data-act="a7"></div>
+    <div data-act="a8"></div>
+    <div data-act="a9"></div>
+    <div data-act="a10"></div>
+  </section>
+
+  <!-- ================= 5. OBJETIVOS ================= -->
+  <section class="page" id="objetivos" data-title="Selección de los objetivos">
+    <div class="page-head">
+      <div class="kicker"><b>3.1.1.2</b> Etapa 2 de la dimensión lógica</div>
+      <h2>Selección de los objetivos</h2>
+      <div class="track" data-step="2"></div>
+      <p class="lead">Los objetivos describen el estado futuro deseado y son el criterio para evaluar el éxito del proyecto. Deben ser claros, medibles y alineados con la visión de la organización.</p>
+    </div>
+    <div class="keys">
+      <div class="key"><b>Derivar del problema</b><p>Cada objetivo contribuye directa o indirectamente a resolver el problema tal como fue definido.</p></div>
+      <div class="key"><b>Involucrar a los stakeholders</b><p>Los objetivos se validan y priorizan con las partes interesadas clave.</p></div>
+      <div class="key"><b>Jerarquizar</b><p>Distinguir objetivos principales y secundarios para enfocar el esfuerzo en lo esencial.</p></div>
+    </div>
+    <p><b>Del problema a los objetivos</b> (ejemplo de la guía):</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Declaración del problema</th><th>Objetivo general derivado</th><th>Objetivos específicos (medibles)</th></tr></thead>
+      <tbody><tr>
+        <td>El proceso de aprobación de solicitudes de cliente es lento, tomando en promedio 72 horas, lo que genera insatisfacción y pérdida de oportunidades comerciales.</td>
+        <td>Diseñar un sistema de aprobación de solicitudes ágil y confiable.</td>
+        <td><ul><li>Reducir el tiempo promedio de aprobación a menos de 4 horas.</li><li>Automatizar el 95% de las aprobaciones que cumplen criterios predefinidos.</li><li>Integrar el sistema de aprobación con la plataforma de comunicación con el cliente.</li></ul></td>
+      </tr></tbody>
+    </table></div>
+    <div data-act="a11"></div>
+    <div data-act="a12"></div>
+    <div data-act="a13"></div>
+  </section>
+
+  <!-- ================= 6. SÍNTESIS ================= -->
+  <section class="page" id="sintesis" data-title="Síntesis del sistema">
+    <div class="page-head">
+      <div class="kicker"><b>3.1.1.3</b> Etapa 3 de la dimensión lógica</div>
+      <h2>Síntesis del sistema</h2>
+      <div class="track" data-step="3"></div>
+      <p class="lead">La etapa creativa por excelencia: generar el abanico más amplio posible de conceptos y alternativas capaces de lograr los objetivos, posponiendo al principio las restricciones detalladas y la viabilidad inmediata.</p>
+    </div>
+    <div class="keys">
+      <div class="key"><b>Tormenta de ideas</b><p>Generar una gran cantidad de ideas sin filtro en un tiempo limitado.</p></div>
+      <div class="key"><b>Análisis morfológico</b><p>Explorar sistemáticamente las combinaciones entre funciones y los medios para realizarlas.</p></div>
+      <div class="key"><b>Analogías y benchmarking</b><p>Buscar inspiración en soluciones existentes de otros dominios o industrias.</p></div>
+    </div>
+    <div class="note prose"><p style="margin:0">La síntesis se preocupa por la <b>configuración global</b> del sistema: cómo las partes se interrelacionan para formar un todo coherente. Las alternativas generadas son la materia prima del <b>análisis</b>, donde se evalúan por desempeño, costo y viabilidad antes de seleccionar la opción definitiva.</p></div>
+    <div data-act="a14"></div>
+    <div data-act="a15"></div>
+    <div data-act="a16"></div>
+    <div data-act="a17"></div>
+    <div data-act="a18"></div>
+  </section>
+
+  <!-- ================= 7. REPASO ================= -->
+  <section class="page" id="repaso" data-title="Repaso y reto final">
+    <div class="page-head">
+      <div class="kicker"><b>Repaso</b> Cierre de la clase</div>
+      <h2>Repaso y reto final</h2>
+      <p class="lead">Tres desafíos para fijar los conceptos de la sesión antes del trabajo en grupo.</p>
+    </div>
+    <div data-act="a19"></div>
+    <div data-act="a20"></div>
+    <div data-act="a21"></div>
+  </section>
+
+  <!-- ================= 8. ACTIVIDADES ================= -->
+  <section class="page" id="actividades" data-title="Actividades de la guía">
+    <div class="page-head">
+      <div class="kicker"><b>IV</b> Actividades</div>
+      <h2>Actividades de la guía (trabajo en grupo)</h2>
+      <p class="lead">Estas son las actividades oficiales de la guía didáctica. Márcalas a medida que tu grupo complete cada elemento.</p>
+    </div>
+    <div class="guide-act" data-g="g1">
+      <h3>Actividad 1: Determinación y Delimitación del Problema Sistémico</h3>
+      <p>Cada grupo de trabajo deberá desarrollar un documento analítico que contenga los siguientes elementos:</p>
+      <ul>
+        <li><input type="checkbox" aria-label="Completado"><span>Una descripción narrativa del problema identificado en el sistema bajo estudio, especificando sus manifestaciones principales y el impacto observable en las operaciones actuales.</span></li>
+        <li><input type="checkbox" aria-label="Completado"><span>Un diagrama de relaciones causales que ilustre las interconexiones entre los diferentes factores que contribuyen a la problemática identificada.</span></li>
+        <li><input type="checkbox" aria-label="Completado"><span>Una matriz de stakeholders que identifique a los actores relevantes, sus intereses particulares y su nivel de influencia en el sistema.</span></li>
+      </ul>
+    </div>
+    <div class="guide-act" data-g="g2">
+      <h3>Actividad 2: Formulación de Objetivos y Criterios de Evaluación</h3>
+      <p>Basándose en la problemática delimitada en la actividad anterior, los equipos procederán a:</p>
+      <ul>
+        <li><input type="checkbox" aria-label="Completado"><span>Elaborar una estructura jerárquica de objetivos que distinga entre objetivos estratégicos, tácticos y operacionales del sistema.</span></li>
+        <li><input type="checkbox" aria-label="Completado"><span>Desarrollar una tabla de criterios de evaluación cuantitativos y cualitativos para cada objetivo, especificando las métricas correspondientes y los valores objetivo deseados.</span></li>
+        <li><input type="checkbox" aria-label="Completado"><span>Definir los requisitos mínimos de aceptación para la solución del sistema y los niveles de aspiración que representarían una solución óptima.</span></li>
+      </ul>
+    </div>
+    <div class="guide-act" data-g="g3">
+      <h3>Actividad 3: Síntesis Conceptual de Alternativas de Solución</h3>
+      <p>Para completar la fase de confección del sistema de interés, los estudiantes desarrollarán:</p>
+      <ul>
+        <li><input type="checkbox" aria-label="Completado"><span>Una generación estructurada de conceptos de solución mediante la aplicación de técnicas de creatividad como SCAMPER o análisis morfológico.</span></li>
+        <li><input type="checkbox" aria-label="Completado"><span>Una descripción detallada de al menos tres alternativas conceptuales viables, especificando para cada una su arquitectura funcional principal.</span></li>
+        <li><input type="checkbox" aria-label="Completado"><span>Una matriz de evaluación multicriterio que permita visualizar el desempeño relativo de cada alternativa frente a los objetivos del sistema.</span></li>
+      </ul>
+    </div>
+    <div class="note prose"><p style="margin:0">Consejo: las actividades 7, 9, 13, 17 y 18 de esta página son ensayos de lo que pide cada entregable (cinco porqués, matriz de stakeholders, objetivos medibles, caja morfológica y matriz multicriterio). Úsalas como modelo con el sistema que estudia tu grupo.</p></div>
+  </section>
+
+  <!-- ================= 9. RESULTADO ================= -->
+  <section class="page" id="resultado" data-title="Mi resultado y bibliografía">
+    <div class="page-head no-print">
+      <div class="kicker"><b>Fin</b> Constancia</div>
+      <h2>Mi resultado</h2>
+      <p class="lead">Este resumen muestra tu desempeño en las actividades de la página. Puedes imprimirlo o guardarlo como PDF si el docente lo solicita.</p>
+    </div>
+    <div class="res-card" id="resCard"></div>
+    <div class="no-print" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px">
+      <button class="btn" type="button" id="printBtn">Imprimir o guardar en PDF</button>
+      <button class="btn ghost" type="button" id="resetBtn">Borrar mi avance</button>
+    </div>
+    <h3>Bibliografía</h3>
+    <ul class="biblio">
+      <li>Hall, Arthur D. (1962). <i>A Methodology for Systems Engineering</i>. Van Nostrand Reinhold.</li>
+      <li>Blanchard, B. S., &amp; Fabrycky, W. J. (2014). <i>Systems Engineering and Analysis</i> (5th ed.). Prentice Hall.</li>
+      <li>IEEE (1998). <i>Standard for Application and Management of the Systems Engineering Process</i> (IEEE Std 1220-1998).</li>
+    </ul>
+    <p style="color:var(--muted);font-size:.9rem">Material elaborado a partir de la Guía Didáctica de Ingeniería de Sistemas, Semana 11 · Universidad Nacional de Ingeniería, Facultad de Ciencias y Sistemas, Departamento de Informática. El caso CrediChontales es ficticio y tiene fines didácticos.</p>
+  </section>
+
+  </main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+/* =========================================================
+   DATOS: secciones y actividades
+   ========================================================= */
+const SECTIONS = [
+  {id:'inicio',     t:'Inicio y caso de estudio',         min:5},
+  {id:'confeccion', t:'Confección del sistema de interés', min:12},
+  {id:'hall',       t:'Esquema de Hall',                   min:20},
+  {id:'problema',   t:'Determinación del problema',        min:22},
+  {id:'objetivos',  t:'Selección de los objetivos',        min:20},
+  {id:'sintesis',   t:'Síntesis del sistema',              min:28},
+  {id:'repaso',     t:'Repaso y reto final',               min:13},
+  {id:'actividades',t:'Actividades de la guía',            min:0},
+  {id:'resultado',  t:'Mi resultado y bibliografía',       min:0}
+];
+
+const HALL_STEPS = ['Formulación del problema','Selección de objetivos','Síntesis del sistema','Análisis de los sistemas','Selección del sistema','Desarrollo del sistema','Ingeniería actual'];
+
+const ACTS = {
+  /* ---------- Confección ---------- */
+  a1:{sec:'confeccion', type:'sort', kind:'Clasificar', min:6, pts:10,
+    title:'¿Dentro o fuera de la frontera?',
+    intro:'Nuestro sistema de interés es <b>el proceso de aprobación de créditos de CrediChontales</b>. Arrastra cada tarjeta (o tócala y luego toca el recuadro) para decidir si es parte del sistema o de su entorno.',
+    buckets:[{id:'S',label:'Sistema de interés',sub:'Lo controlamos y podemos rediseñarlo'},{id:'E',label:'Entorno',sub:'Influye, pero no lo controlamos'}],
+    items:[
+      {t:'Oficiales de crédito',b:'S'},
+      {t:'Comité de crédito',b:'S'},
+      {t:'Formulario de solicitud',b:'S'},
+      {t:'Política interna de crédito',b:'S',why:'La política interna la define CrediChontales: se puede cambiar, por eso es parte del sistema.'},
+      {t:'Expedientes de los clientes',b:'S'},
+      {t:'Modelo interno de puntaje (scoring)',b:'S'},
+      {t:'Normativa de la CONAMI',b:'E',why:'La CONAMI regula a la institución desde fuera: condiciona al sistema, pero no podemos rediseñarla.'},
+      {t:'Central de riesgo (buró de crédito)',b:'E',why:'Es un servicio externo: el sistema lo consulta (entrada), pero no lo controla.'},
+      {t:'Microfinancieras competidoras',b:'E'},
+      {t:'Inflación y tasas del mercado',b:'E'},
+      {t:'Cliente que solicita el crédito',b:'E',why:'El cliente aporta entradas (solicitud, documentos) y recibe salidas (respuesta), pero no forma parte del proceso que rediseñamos.'},
+      {t:'Ciclo agrícola de la zona',b:'E'}
+    ]},
+  a2:{sec:'confeccion', type:'fill', kind:'Completar', min:4, pts:10,
+    title:'Completa la idea clave',
+    intro:'Elige en cada espacio la palabra correcta. Hay palabras que sobran.',
+    text:'La confección del sistema de interés es la fase [[inicial]] de la metodología propuesta por Arthur D. [[Hall]]. Su propósito es [[delimitar]] el ámbito de estudio: qué elementos, procesos y actores forman parte del sistema y cuáles pertenecen a su [[entorno]]. Una definición [[ambigua]] provoca análisis dispersos, diseños [[incompletos]] y soluciones que no atacan el problema [[central]]. Por eso exige analizar con cuidado los [[límites]] y las [[interacciones]] entre el sistema y su contexto.',
+    extra:['final','Checkland','ampliar','interior','precisa','óptimos','secundario','costos']},
+
+  /* ---------- Hall ---------- */
+  a3:{sec:'hall', type:'order', kind:'Ordenar', min:5, pts:10,
+    title:'Pon en orden la dimensión lógica',
+    intro:'Arrastra las etapas (o usa las flechas) hasta formar la secuencia de la dimensión lógica del Esquema de Hall.',
+    items:HALL_STEPS},
+  a4:{sec:'hall', type:'sort', kind:'Clasificar', min:6, pts:10,
+    title:'¿A qué dimensión pertenece?',
+    intro:'Cada tarjeta es una etapa, una fase o un campo de saber. Ubícala en la dimensión del Esquema de Hall a la que corresponde.',
+    buckets:[{id:'L',label:'Dimensión lógica',sub:'Etapas intelectuales'},{id:'T',label:'Dimensión temporal',sub:'Ciclo de vida'},{id:'C',label:'Dimensión del conocimiento',sub:'Disciplinas'}],
+    items:[
+      {t:'Formulación del problema',b:'L'},{t:'Síntesis del sistema',b:'L'},{t:'Análisis de los sistemas',b:'L'},{t:'Selección del sistema',b:'L'},
+      {t:'Estudio preliminar',b:'T'},{t:'Construcción',b:'T'},{t:'Operación',b:'T'},{t:'Retirada',b:'T'},
+      {t:'Informática',b:'C'},{t:'Investigación de operaciones',b:'C'},{t:'Psicología organizacional',b:'C'},{t:'Economía',b:'C'}
+    ]},
+  a5:{sec:'hall', type:'mcq', kind:'Verdadero o falso', min:4, pts:10, tf:true,
+    title:'Verdadero o falso relámpago',
+    intro:'Responde rápido: cada respuesta se revisa al instante.',
+    qs:[
+      {q:'El Esquema de Hall es un proceso estrictamente lineal: no se puede volver a una etapa anterior.',a:1,fb:'Falso. Es un proceso iterativo y adaptativo, no una simple secuencia lineal.'},
+      {q:'La dimensión temporal organiza las actividades en hitos y entregables a lo largo del ciclo de vida del sistema.',a:0,fb:'Verdadero. Asegura que el proyecto avance de forma ordenada.'},
+      {q:'La dimensión del conocimiento reconoce la naturaleza multidisciplinaria de la ingeniería de sistemas.',a:0,fb:'Verdadero. Integra informática, investigación de operaciones, psicología organizacional, economía, etc.'},
+      {q:'La «Ingeniería actual» corresponde a la implementación y puesta en marcha del sistema.',a:0,fb:'Verdadero. Es la séptima etapa de la dimensión lógica.'},
+      {q:'Las alternativas de diseño se generan por primera vez en la etapa de Selección del sistema.',a:1,fb:'Falso. Se generan en la Síntesis; la Selección elige la más prometedora tras el Análisis.'},
+      {q:'El Esquema de Hall integra tres dimensiones interdependientes.',a:0,fb:'Verdadero: lógica, temporal y del conocimiento.'}
+    ]},
+
+  /* ---------- Problema ---------- */
+  a6:{sec:'problema', type:'sort', kind:'Clasificar', min:5, pts:10,
+    title:'Síntoma o causa raíz',
+    intro:'En CrediChontales todos hablan del problema, pero mezclan lo que se ve con lo que lo provoca. Separa los síntomas de las causas raíz.',
+    buckets:[{id:'S',label:'Síntoma',sub:'Lo que se ve o se siente'},{id:'C',label:'Causa raíz',sub:'Lo que lo provoca'}],
+    items:[
+      {t:'Los clientes se quejan de la espera',b:'S'},
+      {t:'Algunos clientes se van con la competencia',b:'S'},
+      {t:'Los oficiales hacen horas extra',b:'S'},
+      {t:'Se acumulan solicitudes los lunes',b:'S',why:'Es una manifestación visible: lo que hay que preguntar es por qué se acumulan.'},
+      {t:'Cada expediente se revisa a mano en tres oficinas distintas',b:'C'},
+      {t:'El comité de crédito solo se reúne dos veces por semana',b:'C'},
+      {t:'No hay criterios predefinidos para aprobar montos pequeños',b:'C'},
+      {t:'La consulta a la central de riesgo se hace por correo',b:'C',why:'Es un mecanismo del proceso que genera la demora; corregirlo cambia el resultado.'}
+    ]},
+  a7:{sec:'problema', type:'whys', kind:'Reto', min:5, pts:10,
+    title:'Los cinco porqués: baja hasta la raíz',
+    intro:'Parte del síntoma y elige en cada nivel la respuesta que realmente explica el nivel anterior. Cuidado con las trampas: culpar a personas, repetir el síntoma o saltar a una solución.',
+    start:'El cliente espera 72 horas por la respuesta a su solicitud.',
+    levels:[
+      {opts:['Porque la solicitud pasa varios días esperando la decisión del comité','Porque los clientes son impacientes','Porque falta una aplicación móvil'],a:0,
+        fb:['','Culpa al usuario y no explica la demora.','Salta a una solución antes de entender la causa.']},
+      {opts:['Porque el comité es lento','Porque el comité solo se reúne martes y viernes','Porque hay que contratar más personal'],a:1,
+        fb:['Repite el síntoma con otras palabras.','','Es una solución, no una causa.']},
+      {opts:['Porque así se ha hecho siempre','Porque los oficiales no saben hacer su trabajo','Porque todas las solicitudes, incluso las de montos pequeños, deben pasar por el comité'],a:2,
+        fb:['No explica nada: es costumbre, no causa.','Culpa a personas sin evidencia.','']},
+      {opts:['Porque la política de crédito no define criterios para aprobar automáticamente las solicitudes de bajo riesgo','Porque la CONAMI lo prohíbe','Porque el sistema informático es viejo'],a:0,
+        fb:['','Es una suposición: habría que verificarla con la normativa antes de afirmarla.','Puede ser cierto, pero no se deriva de la cadena que vienes siguiendo.']}
+    ],
+    root:'Declaración del problema: la política de crédito de CrediChontales obliga a que todas las solicitudes —incluso las de bajo riesgo— pasen por un comité que se reúne dos veces por semana, lo que eleva el tiempo de aprobación a 72 horas y provoca insatisfacción y pérdida de clientes.'},
+  a8:{sec:'problema', type:'match', kind:'Relacionar', min:5, pts:10,
+    title:'¿Qué técnica estás usando?',
+    intro:'Toca una situación de la izquierda y luego la técnica o concepto de la derecha que le corresponde. Toca un par ya unido para deshacerlo.',
+    lh:'Situación en CrediChontales', rh:'Técnica o concepto',
+    pairs:[
+      {l:'Conversas con 12 clientes usando el mismo cuestionario de 10 preguntas.',r:'Entrevista estructurada'},
+      {l:'Charlas libremente con la gerente sobre lo que más le preocupa del proceso.',r:'Entrevista no estructurada'},
+      {l:'Pasas una mañana en la sucursal cronometrando cada paso de una solicitud.',r:'Observación directa'},
+      {l:'Redactas un informe con la situación actual, sus dolores y las oportunidades de mejora.',r:'Documento de contexto'},
+      {l:'El gerente pide textualmente: «reduzcan la aprobación a un día».',r:'Necesidad explícita'},
+      {l:'El cliente pide «una app», pero lo que necesita es saber en qué estado va su solicitud.',r:'Necesidad implícita'}
+    ]},
+  a9:{sec:'problema', type:'sort', kind:'Matriz', min:6, pts:10, layout:'grid2', axes:true,
+    title:'Matriz de stakeholders: influencia × interés',
+    intro:'Lee la descripción de cada actor y ubícalo en el cuadrante que le corresponde. Esta matriz es la que pide la Actividad 1 de la guía.',
+    buckets:[
+      {id:'SAT',label:'Mantener satisfecho',sub:'Influencia alta · interés bajo'},
+      {id:'GES',label:'Gestionar de cerca',sub:'Influencia alta · interés alto'},
+      {id:'MON',label:'Monitorear',sub:'Influencia baja · interés bajo'},
+      {id:'INF',label:'Mantener informado',sub:'Influencia baja · interés alto'}],
+    items:[
+      {t:'Gerente general: aprueba el presupuesto y quiere resolver el problema ya',b:'GES'},
+      {t:'Comité de crédito: puede bloquear el cambio y le afecta directamente',b:'GES'},
+      {t:'CONAMI: puede sancionar, pero no le interesa cómo se organiza el proceso interno',b:'SAT'},
+      {t:'Junta directiva: aprueba la inversión final y revisa el proyecto una vez por trimestre',b:'SAT'},
+      {t:'Oficiales de crédito: usarán el sistema a diario, pero no deciden la inversión',b:'INF'},
+      {t:'Clientes: sufren la espera, pero no deciden cómo se diseña el sistema',b:'INF'},
+      {t:'Proveedor de internet: su servicio se usa, pero no le importa el proyecto ni decide nada',b:'MON'},
+      {t:'Empresa de limpieza de las sucursales',b:'MON'}
+    ]},
+  a10:{sec:'problema', type:'mcq', kind:'Selección', min:3, pts:10,
+    title:'Elige la mejor declaración del problema',
+    intro:'Una buena declaración es concisa, está fundamentada en datos y no propone la solución.',
+    qs:[
+      {q:'¿Cuál es la mejor declaración del problema para CrediChontales?',
+        opts:['Necesitamos un sistema informático nuevo con inteligencia artificial.','El proceso de aprobación de créditos tarda en promedio 72 horas, lo que genera quejas y pérdida de clientes frente a la competencia.','Los oficiales de crédito trabajan muy lento.','El servicio al cliente es malo.'],a:1,
+        fb:'Es concisa, medible (72 h), muestra el impacto y no impone una solución ni culpa a personas.'},
+      {q:'¿Qué está mal en «Hay que comprar un software de scoring»?',
+        opts:['Nada, es una buena declaración.','Es demasiado larga.','Describe una solución, no el problema.','No menciona a la CONAMI.'],a:2,
+        fb:'Saltar a la solución en la etapa de determinación del problema cierra las alternativas antes de tiempo.'},
+      {q:'¿Qué actividad ayuda a descubrir comportamientos no documentados del sistema actual?',
+        opts:['La observación directa','Leer la misión de la empresa','Elegir la alternativa más barata','Diseñar la base de datos'],a:0,
+        fb:'Ver el sistema funcionando revela ineficiencias que nadie menciona en las entrevistas.'}
+    ]},
+
+  /* ---------- Objetivos ---------- */
+  a11:{sec:'objetivos', type:'sort', kind:'Clasificar', min:4, pts:10,
+    title:'¿Medible o vago?',
+    intro:'Un objetivo sirve como criterio de éxito solo si se puede comprobar. Separa los objetivos medibles de los vagos.',
+    buckets:[{id:'M',label:'Medible',sub:'Indicador + valor + plazo'},{id:'V',label:'Vago',sub:'No se puede comprobar'}],
+    items:[
+      {t:'Reducir el tiempo promedio de aprobación a menos de 4 horas antes de junio de 2027',b:'M'},
+      {t:'Automatizar el 95 % de las aprobaciones que cumplen criterios predefinidos',b:'M'},
+      {t:'Notificar al 90 % de los clientes el estado de su solicitud en menos de 1 hora',b:'M'},
+      {t:'Disminuir en 30 % las solicitudes abandonadas durante el primer semestre',b:'M'},
+      {t:'Mejorar el servicio al cliente',b:'V',why:'¿Cuánto? ¿Cómo se mide? ¿Para cuándo? Sin indicador no se puede evaluar.'},
+      {t:'Tener un sistema moderno',b:'V'},
+      {t:'Que los oficiales trabajen mejor',b:'V'},
+      {t:'Optimizar los procesos de la empresa',b:'V'}
+    ]},
+  a12:{sec:'objetivos', type:'sort', kind:'Clasificar', min:5, pts:10,
+    title:'Arma la jerarquía de objetivos',
+    intro:'La Actividad 2 de la guía pide distinguir objetivos estratégicos, tácticos y operacionales. Ubica cada objetivo en su nivel.',
+    buckets:[{id:'E',label:'Estratégico',sub:'Visión de la organización, largo plazo'},{id:'T',label:'Táctico',sub:'Lo que debe lograr el sistema'},{id:'O',label:'Operacional',sub:'Tareas concretas del día a día'}],
+    items:[
+      {t:'Ser la microfinanciera con la respuesta más rápida de Chontales',b:'E'},
+      {t:'Aumentar la cartera de clientes en 20 % en dos años',b:'E'},
+      {t:'Reducir el tiempo promedio de aprobación a menos de 4 horas',b:'T'},
+      {t:'Integrar la aprobación con la plataforma de comunicación con el cliente',b:'T'},
+      {t:'Consultar la central de riesgo automáticamente en menos de 5 minutos por solicitud',b:'O'},
+      {t:'Registrar cada solicitud en el sistema el mismo día que se recibe',b:'O'}
+    ]},
+  a13:{sec:'objetivos', type:'builder', kind:'Construir', min:8, pts:10,
+    title:'Taller de objetivos medibles',
+    intro:'Construye tres objetivos específicos para CrediChontales. Cada uno necesita un verbo, un indicador, una meta numérica y un plazo. Agrega también el requisito mínimo de aceptación y el nivel de aspiración (lo que pide la Actividad 2).'},
+
+  /* ---------- Síntesis ---------- */
+  a14:{sec:'sintesis', type:'mcq', kind:'Selección', min:3, pts:10,
+    title:'¿Qué técnica de síntesis es?',
+    intro:'Identifica la técnica que está aplicando el equipo en cada situación.',
+    qs:[
+      {q:'El equipo escribe durante 5 minutos todas las ideas posibles, sin criticarlas.',opts:['Tormenta de ideas','Análisis morfológico','Benchmarking'],a:0,fb:'Cantidad sin filtro, en tiempo limitado: tormenta de ideas.'},
+      {q:'Arman una tabla con las funciones en filas y las formas de realizarlas en columnas, y prueban combinaciones.',opts:['Tormenta de ideas','Análisis morfológico','Analogías'],a:1,fb:'Funciones × medios: análisis morfológico.'},
+      {q:'Estudian cómo un banco digital aprueba préstamos en minutos para inspirarse.',opts:['Análisis morfológico','Selección del sistema','Analogías y benchmarking'],a:2,fb:'Toman ideas de soluciones existentes en otro dominio.'},
+      {q:'Durante la síntesis, lo más recomendable es…',opts:['Elegir de inmediato la opción más barata','Posponer las restricciones detalladas y generar muchas alternativas','Descartar toda idea que parezca inviable'],a:1,fb:'Primero divergencia; la viabilidad se evalúa después, en el análisis.'}
+    ]},
+  a15:{sec:'sintesis', type:'brain', kind:'Lluvia de ideas', min:6, pts:10,
+    title:'Tormenta de ideas contra reloj',
+    intro:'Tienes 4 minutos. Escribe todas las ideas que se te ocurran para reducir el tiempo de aprobación en CrediChontales. No juzgues: cantidad antes que calidad. La meta es llegar a 8 ideas o más.'},
+  a16:{sec:'sintesis', type:'scamper', kind:'Ruleta', min:6, pts:10,
+    title:'Ruleta SCAMPER',
+    intro:'Gira la ruleta, lee la pregunta de la letra que salió y escribe una idea aplicada a CrediChontales. Completa al menos 4 letras.'},
+  a17:{sec:'sintesis', type:'morph', kind:'Construir', min:7, pts:10,
+    title:'Caja morfológica: arma tres alternativas',
+    intro:'Elige un medio por cada función (toca una celda por fila). Cuando la fila esté completa, ponle nombre y guarda la alternativa. Necesitas tres alternativas diferentes: las usarás en la siguiente actividad.'},
+  a18:{sec:'sintesis', type:'mcm', kind:'Matriz', min:6, pts:10,
+    title:'Matriz de evaluación multicriterio',
+    intro:'Asigna un peso a cada criterio (deben sumar 100) y califica cada alternativa del 1 (muy mal) al 5 (excelente). La matriz calcula el desempeño relativo. Recuerda: la selección definitiva ocurre después del análisis detallado.'},
+
+  /* ---------- Repaso ---------- */
+  a19:{sec:'repaso', type:'cross', kind:'Crucigrama', min:5, pts:10,
+    title:'Crucigrama del sistema de interés',
+    intro:'Escribe las respuestas sin tildes. Toca una pista para ir a su casilla.',
+    words:[
+      {w:'MORFOLOGICO',c:'Análisis que combina funciones y medios para realizarlas'},
+      {w:'STAKEHOLDER',c:'Parte interesada, en inglés'},
+      {w:'FRONTERA',c:'Límite que separa el sistema de interés de su entorno'},
+      {w:'SINTESIS',c:'Etapa creativa en la que se generan alternativas'},
+      {w:'OBJETIVO',c:'Estado futuro deseado; debe ser claro y medible'},
+      {w:'TEMPORAL',c:'Dimensión de Hall que organiza el ciclo de vida'},
+      {w:'ENTORNO',c:'Lo que rodea al sistema y no está bajo su control'},
+      {w:'SINTOMA',c:'Manifestación superficial de un problema'},
+      {w:'LOGICA',c:'Dimensión de Hall formada por siete etapas'},
+      {w:'HALL',c:'Autor de «A Methodology for Systems Engineering» (1962)'}
+    ]},
+  a20:{sec:'repaso', type:'wsearch', kind:'Sopa de letras', min:4, pts:10,
+    title:'Sopa de letras',
+    intro:'Encuentra las 10 palabras: arrastra desde la primera hasta la última letra (o toca la primera y luego la última). Pueden estar en horizontal, vertical o diagonal.',
+    words:['HALL','PROBLEMA','OBJETIVO','SINTESIS','ENTORNO','CRITERIO','SCAMPER','ANALOGIA','MATRIZ','ITERATIVO']},
+  a21:{sec:'repaso', type:'mcq', kind:'Reto', min:4, pts:10,
+    title:'Reto final',
+    intro:'Ocho preguntas para cerrar. Lee con atención: algunas tienen trampa.',
+    qs:[
+      {q:'¿Cuál es la etapa más crítica de la dimensión lógica, según la guía?',opts:['Síntesis del sistema','Determinación del problema','Desarrollo del sistema','Ingeniería actual'],a:1,fb:'Un error en la definición del problema conduce a una solución incorrecta o insuficiente.'},
+      {q:'¿Qué produce, como resultado, la determinación del problema?',opts:['Un prototipo funcional','Una declaración concisa y bien fundamentada del problema','La matriz multicriterio','El presupuesto del proyecto'],a:1,fb:'Es el punto de partida inequívoco para el equipo.'},
+      {q:'Los objetivos deben derivarse de…',opts:['La tecnología disponible','El problema tal como fue definido','Lo que hace la competencia','Las preferencias del programador'],a:1,fb:'Cada objetivo contribuye directa o indirectamente a resolver el problema definido.'},
+      {q:'¿Cuál de estos objetivos es medible?',opts:['Modernizar la institución','Lograr clientes más felices','Automatizar el 95 % de las aprobaciones que cumplen criterios predefinidos','Hacer el proceso más ágil'],a:2,fb:'Tiene indicador y valor meta.'},
+      {q:'Si una caja morfológica tiene 4 funciones con 3 medios cada una, ¿cuántas combinaciones posibles hay?',opts:['12','64','81','7'],a:2,fb:'3 × 3 × 3 × 3 = 81 combinaciones.'},
+      {q:'¿Qué dimensión de Hall integra disciplinas como la economía y la psicología organizacional?',opts:['Lógica','Temporal','Del conocimiento','Morfológica'],a:2,fb:'La dimensión del conocimiento refleja el carácter multidisciplinario.'},
+      {q:'¿En qué etapa se evalúan rigurosamente las alternativas por desempeño, costo y viabilidad?',opts:['Síntesis del sistema','Análisis de los sistemas','Formulación del problema','Selección de objetivos'],a:1,fb:'La síntesis genera; el análisis evalúa; la selección elige.'},
+      {q:'La confección del sistema de interés consiste principalmente en…',opts:['Programar el sistema','Delimitar qué pertenece al sistema y qué a su entorno','Elegir el lenguaje de programación','Capacitar a los usuarios'],a:1,fb:'Define con precisión el ámbito de estudio y sus límites.'}
+    ]}
+};
+
+const HALL_DIMS = {
+  log:{t:'Dimensión lógica',
+    html:'<p>Secuencia de etapas intelectuales para resolver un problema de sistemas. Es un proceso <b>iterativo</b>:</p><ol>'+HALL_STEPS.map((s,i)=>'<li><b>'+s+'</b>: '+['definición y comprensión cabal del problema a resolver.','establecimiento de los fines que el sistema debe alcanzar.','generación de alternativas de diseño conceptual.','evaluación detallada de las alternativas propuestas.','elección de la alternativa más prometedora.','diseño detallado y realización del sistema.','implementación y puesta en marcha.'][i]+'</li>').join('')+'</ol>',
+    rot:{x:-12,y:-18}},
+  tmp:{t:'Dimensión temporal',
+    html:'<p>Corresponde al <b>ciclo de vida</b> del sistema y organiza las actividades en una línea de tiempo con hitos y entregables bien definidos.</p><ul><li>Estudio preliminar</li><li>Diseño detallado</li><li>Construcción</li><li>Operación</li><li>Retirada</li></ul><p style="margin-top:10px">Asegura que el proyecto avance de manera ordenada.</p>',
+    rot:{x:-12,y:-72}},
+  con:{t:'Dimensión del conocimiento',
+    html:'<p>Reconoce la naturaleza <b>multidisciplinaria</b> de la ingeniería de sistemas: integra los campos de especialidad y saberes necesarios para abordar el problema.</p><ul><li>Informática</li><li>Investigación de operaciones</li><li>Psicología organizacional</li><li>Economía</li></ul><p style="margin-top:10px">En CrediChontales también harían falta finanzas y derecho regulatorio.</p>',
+    rot:{x:-70,y:-30}}
+};
+
+const SCAMPER = [
+  {l:'S',n:'Sustituir',q:'¿Qué paso del proceso podrías sustituir por otro más rápido o más simple?'},
+  {l:'C',n:'Combinar',q:'¿Qué dos pasos o revisiones podrían hacerse al mismo tiempo o por la misma persona?'},
+  {l:'A',n:'Adaptar',q:'¿Qué idea de otro sector (bancos digitales, delivery, apps de transporte) podrías adaptar?'},
+  {l:'M',n:'Modificar',q:'¿Qué podrías agrandar, reducir o cambiar (montos, formularios, horarios del comité)?'},
+  {l:'P',n:'Poner otros usos',q:'¿Para qué más podrían servir los datos que ya recoge la solicitud?'},
+  {l:'E',n:'Eliminar',q:'¿Qué firma, copia o paso podrías eliminar por completo sin perder control?'},
+  {l:'R',n:'Reordenar',q:'¿Qué pasaría si cambias el orden de las etapas (por ejemplo, consultar el buró antes de recibir papeles)?'}
+];
+
+const MORPH = [
+  {f:'Recibir la solicitud', m:['Ventanilla en sucursal','Formulario web','WhatsApp con asistente','Oficial con tablet en campo']},
+  {f:'Verificar identidad', m:['Fotocopia de cédula','Foto de cédula + selfie','Firma digital']},
+  {f:'Evaluar el riesgo', m:['Comité para todas','Scoring automático','Scoring + comité solo para montos altos']},
+  {f:'Consultar central de riesgo', m:['Por correo','Consulta en línea manual','Integración automática (API)']},
+  {f:'Notificar al cliente', m:['Llamada telefónica','SMS','WhatsApp automático','Portal de seguimiento']}
+];
+</script>
+<script>
+(function(){
+'use strict';
+/* =========================================================
+   ESTADO
+   ========================================================= */
+const KEY = 'uni-is-s11-hall-v1';
+let S = {name:'', group:'', scores:{}, data:{}, guide:{}};
+try{ const raw = localStorage.getItem(KEY); if(raw){ S = Object.assign(S, JSON.parse(raw)); } }catch(e){}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+
+const $ = (s,r=document)=>r.querySelector(s);
+const $$ = (s,r=document)=>Array.from(r.querySelectorAll(s));
+const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function shuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+function shuffleNot(a){ if(a.length<2) return a.slice(); let s; do{ s=shuffle(a); }while(s.every((v,i)=>v===a[i])); return s; }
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove('show'),2600); }
+function el(tag, attrs={}, html=''){ const e=document.createElement(tag); for(const k in attrs){ if(k==='class') e.className=attrs[k]; else if(k.startsWith('on')) e.addEventListener(k.slice(2),attrs[k]); else e.setAttribute(k,attrs[k]); } if(html) e.innerHTML=html; return e; }
+
+const ORDER = Object.keys(ACTS);
+ORDER.forEach((id,i)=>ACTS[id].n=i+1);
+const TOTAL = ORDER.reduce((s,id)=>s+ACTS[id].pts,0);
+
+function award(id, raw){
+  const a=ACTS[id]; const pts=Math.max(0,Math.min(a.pts,Math.round(raw)));
+  const prev=S.scores[id];
+  if(prev===undefined || pts>prev){ S.scores[id]=pts; save(); }
+  refresh();
+  return pts;
+}
+function feedback(fb, pts, max, extra=''){
+  const r = pts/max; const cls = r>=.999?'ok':(r>=.6?'mid':'bad');
+  const msg = r>=.999?'¡Excelente! Todo correcto.':(r>=.6?'¡Bien! Revisa los que quedaron en rojo.':'Revisa los conceptos e inténtalo de nuevo.');
+  fb.innerHTML = `<span class="msg ${cls}"><b>${pts}/${max} pts</b> · ${msg}</span>${extra}`;
+}
+
+/* =========================================================
+   PROGRESO / NAVEGACIÓN
+   ========================================================= */
+function secStats(sid){
+  const ids=ORDER.filter(id=>ACTS[id].sec===sid);
+  const max=ids.reduce((s,id)=>s+ACTS[id].pts,0);
+  const got=ids.reduce((s,id)=>s+(S.scores[id]||0),0);
+  return {ids,max,got};
+}
+function refresh(){
+  const got=ORDER.reduce((s,id)=>s+(S.scores[id]||0),0);
+  const pct=Math.round(got/TOTAL*100);
+  $('#meterFill').style.width=pct+'%'; $('#meterTxt').textContent=pct+'%';
+  SECTIONS.forEach(s=>{
+    const st=secStats(s.id); const li=$(`#navList a[data-s="${s.id}"] .sub`);
+    if(li && st.max){ li.style.setProperty('--p',Math.round(st.got/st.max*100)+'%'); li.querySelector('em').textContent=`${st.got}/${st.max}`; }
+  });
+  ORDER.forEach(id=>{ const p=$(`[data-pts="${id}"]`); if(p){ const g=S.scores[id]; p.textContent = g===undefined?`${ACTS[id].pts} pts`:`${g}/${ACTS[id].pts} pts`; p.classList.toggle('got', g===ACTS[id].pts); } });
+  renderResult();
+}
+function buildNav(){
+  const nl=$('#navList');
+  nl.innerHTML = SECTIONS.map((s,i)=>{
+    const st=secStats(s.id);
+    return `<li><a href="#${s.id}" data-s="${s.id}"><span class="n">${i+1}</span><span class="lbl">${s.t}</span><span class="sub">${st.max?`<i></i><em>0/${st.max}</em>`:(s.min?`${s.min} min`:'&nbsp;')}</span></a></li>`;
+  }).join('');
+  $('#agenda').innerHTML = SECTIONS.filter(s=>s.min).map((s,i)=>`<a href="#${s.id}"><span class="m">${s.min}<small> min</small></span><span class="t">${i+1}. ${s.t}</span></a>`).join('');
+  // pager
+  SECTIONS.forEach((s,i)=>{
+    const sec=document.getElementById(s.id); if(!sec) return;
+    const p=el('nav',{class:'pager','aria-label':'Navegación entre secciones'});
+    if(i>0) p.appendChild(el('a',{href:'#'+SECTIONS[i-1].id,class:'prev'},`<small>Anterior</small>${SECTIONS[i-1].t}`));
+    if(i<SECTIONS.length-1) p.appendChild(el('a',{href:'#'+SECTIONS[i+1].id,class:'next'},`<small>Siguiente</small>${SECTIONS[i+1].t}`));
+    sec.appendChild(p);
+  });
+  // Hall track
+  $$('.track').forEach(t=>{ const k=+t.dataset.step; t.innerHTML=HALL_STEPS.map((s,i)=>`<span class="${i+1===k?'here':(i+1<k?'done':'')}">${i+1}. ${s}</span>`).join(''); });
+}
+function route(){
+  let id=(location.hash||'#inicio').slice(1);
+  if(!document.getElementById(id) || !document.getElementById(id).classList.contains('page')){
+    const host = document.getElementById(id) && document.getElementById(id).closest('.page');
+    id = host ? host.id : 'inicio';
+  }
+  $$('.page').forEach(p=>p.classList.toggle('on',p.id===id));
+  $$('#navList a').forEach(a=>a.toggleAttribute('aria-current',false));
+  const cur=$(`#navList a[data-s="${id}"]`); if(cur) cur.setAttribute('aria-current','page');
+  $('#nav').classList.remove('open'); $('#menuBtn').setAttribute('aria-expanded','false');
+  window.scrollTo({top:0,behavior:'auto'});
+  if(id==='repaso'){ requestAnimationFrame(()=>{ if(window.__wsLayout) window.__wsLayout(); }); }
+}
+
+/* =========================================================
+   SHELL DE ACTIVIDAD
+   ========================================================= */
+function shell(id){
+  const a=ACTS[id]; const host=$(`[data-act="${id}"]`);
+  host.className='act'; host.id='act-'+id;
+  host.innerHTML=`<header class="act-h"><span class="tag">Actividad ${a.n}</span><h3>${a.title}</h3>
+    <div class="act-meta"><span>${a.kind}</span><span>≈ ${a.min} min</span><span class="pts" data-pts="${id}"></span></div></header>
+    <p class="act-intro">${a.intro}</p><div class="act-body"></div>
+    <div class="act-foot"><div class="fb" role="status" aria-live="polite"></div><div class="act-btns"></div></div>`;
+  return {host, body:$('.act-body',host), fb:$('.fb',host), btns:$('.act-btns',host)};
+}
+function addBtn(box,label,fn,cls='btn'){ const b=el('button',{type:'button',class:cls},label); b.addEventListener('click',fn); box.appendChild(b); return b; }
+
+/* ---------- SORT (clasificar / matriz) ---------- */
+function renderSort(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  let sel=null;
+  const bucketsHTML = a.buckets.map(b=>`<div class="bucket" data-b="${b.id}" tabindex="0" role="button" aria-label="Colocar en ${esc(b.label)}"><div class="bucket-h">${b.label}${b.sub?`<small>${b.sub}</small>`:''}</div><div class="drop"></div></div>`).join('');
+  body.innerHTML = `<div class="pool" aria-label="Tarjetas sin ubicar"></div>` + (a.axes
+    ? `<div class="axis-wrap" style="margin-left:22px"><span class="axis-y">Influencia →</span><div class="buckets grid2">${bucketsHTML}</div><div class="axis-x">Interés →</div></div>`
+    : `<div class="buckets ${a.layout||''}">${bucketsHTML}</div>`);
+  const pool=$('.pool',body);
+  shuffle(a.items.map((it,i)=>({...it,i}))).forEach(it=>{
+    const c=el('button',{type:'button',class:'chip',draggable:'true','data-i':it.i},esc(it.t));
+    c.addEventListener('click',e=>{ e.stopPropagation(); if(sel===c){ c.classList.remove('sel'); sel=null; body.classList.remove('picking'); return; } if(sel) sel.classList.remove('sel'); sel=c; c.classList.add('sel'); body.classList.add('picking'); });
+    c.addEventListener('dragstart',e=>{ sel=c; e.dataTransfer.setData('text/plain',String(it.i)); e.dataTransfer.effectAllowed='move'; });
+    pool.appendChild(c);
+  });
+  const place=(zone)=>{ if(!sel) return; sel.classList.remove('sel','ok','bad'); zone.appendChild(sel); sel=null; body.classList.remove('picking'); fb.innerHTML=''; };
+  $$('.bucket',body).forEach(b=>{
+    const drop=$('.drop',b);
+    b.addEventListener('click',()=>place(drop));
+    b.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); place(drop);} });
+    b.addEventListener('dragover',e=>{ e.preventDefault(); b.classList.add('hot'); });
+    b.addEventListener('dragleave',()=>b.classList.remove('hot'));
+    b.addEventListener('drop',e=>{ e.preventDefault(); b.classList.remove('hot'); place(drop); });
+  });
+  pool.addEventListener('click',()=>place(pool));
+  pool.addEventListener('dragover',e=>e.preventDefault());
+  pool.addEventListener('drop',e=>{ e.preventDefault(); place(pool); });
+
+  addBtn(btns,'Reiniciar',()=>renderSort(id),'btn ghost');
+  addBtn(btns,'Comprobar',()=>{
+    const left=$$('.chip',pool).length;
+    if(left){ fb.innerHTML=`<span class="msg mid">Te faltan ${left} tarjeta${left>1?'s':''} por ubicar.</span>`; return; }
+    let ok=0; const whys=[];
+    $$('.bucket',body).forEach(b=>$$('.chip',b).forEach(c=>{
+      const it=a.items[+c.dataset.i]; const good=it.b===b.dataset.b;
+      c.classList.toggle('ok',good); c.classList.toggle('bad',!good);
+      if(good) ok++; else { const right=a.buckets.find(x=>x.id===it.b).label; whys.push(`<li><b>${esc(it.t)}</b> → va en «${right}». ${it.why||''}</li>`); }
+    }));
+    const pts=award(id, a.pts*ok/a.items.length);
+    feedback(fb,pts,a.pts, whys.length?`<ul class="why">${whys.join('')}</ul>`:'');
+  });
+}
+
+/* ---------- ORDER ---------- */
+function renderOrder(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const ol=el('ol',{class:'olist'});
+  shuffleNot(a.items).forEach(t=>{
+    const li=el('li',{draggable:'true','data-t':t},`<span class="tx">${esc(t)}</span><span class="mv"><button type="button" aria-label="Subir">▲</button><button type="button" aria-label="Bajar">▼</button></span>`);
+    const [up,down]=$$('button',li);
+    up.addEventListener('click',()=>{ if(li.previousElementSibling) ol.insertBefore(li,li.previousElementSibling); clear(); up.focus(); });
+    down.addEventListener('click',()=>{ if(li.nextElementSibling) ol.insertBefore(li.nextElementSibling,li); clear(); down.focus(); });
+    li.addEventListener('dragstart',()=>li.classList.add('drag'));
+    li.addEventListener('dragend',()=>{ li.classList.remove('drag'); clear(); });
+    ol.appendChild(li);
+  });
+  ol.addEventListener('dragover',e=>{
+    e.preventDefault(); const d=$('.drag',ol); if(!d) return;
+    const after=$$('li:not(.drag)',ol).find(x=>{ const r=x.getBoundingClientRect(); return e.clientY < r.top+r.height/2; });
+    after? ol.insertBefore(d,after) : ol.appendChild(d);
+  });
+  function clear(){ $$('li',ol).forEach(x=>x.classList.remove('ok','bad')); fb.innerHTML=''; }
+  body.appendChild(ol);
+  addBtn(btns,'Mezclar',()=>renderOrder(id),'btn ghost');
+  addBtn(btns,'Comprobar',()=>{
+    let ok=0; $$('li',ol).forEach((li,i)=>{ const g=li.dataset.t===a.items[i]; li.classList.toggle('ok',g); li.classList.toggle('bad',!g); if(g) ok++; });
+    feedback(fb, award(id,a.pts*ok/a.items.length), a.pts);
+  });
+}
+
+/* ---------- MATCH ---------- */
+function renderMatch(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const colors=['var(--c1)','var(--c2)','var(--c3)','var(--c4)','var(--c5)','var(--c6)'];
+  const pairs={}; // leftIndex -> rightIndex
+  let selL=null;
+  const wrap=el('div',{class:'match'});
+  const L=el('div',{class:'col'},`<h4>${a.lh}</h4>`); const R=el('div',{class:'col'},`<h4>${a.rh}</h4>`);
+  a.pairs.forEach((p,i)=>{ const b=el('button',{type:'button',class:'mi','data-l':i},esc(p.l)); L.appendChild(b); });
+  shuffle(a.pairs.map((p,i)=>({r:p.r,i}))).forEach(p=>{ const b=el('button',{type:'button',class:'mi','data-r':p.i},esc(p.r)); R.appendChild(b); });
+  wrap.append(L,R); body.appendChild(wrap);
+  function paint(){
+    $$('.mi',wrap).forEach(b=>{ b.removeAttribute('data-pair'); b.style.borderLeftColor=''; b.classList.remove('ok','bad'); });
+    Object.keys(pairs).forEach((l,k)=>{ const c=colors[+l%colors.length]; const lb=$(`[data-l="${l}"]`,wrap), rb=$(`[data-r="${pairs[l]}"]`,wrap); [lb,rb].forEach(b=>{ b.setAttribute('data-pair',l); b.style.borderLeftColor=c; }); });
+    fb.innerHTML='';
+  }
+  $$('[data-l]',wrap).forEach(b=>b.addEventListener('click',()=>{
+    const l=b.dataset.l;
+    if(pairs[l]!==undefined){ delete pairs[l]; paint(); return; }
+    $$('[data-l]',wrap).forEach(x=>x.classList.remove('sel')); selL=l; b.classList.add('sel');
+  }));
+  $$('[data-r]',wrap).forEach(b=>b.addEventListener('click',()=>{
+    const r=b.dataset.r;
+    const owner=Object.keys(pairs).find(k=>pairs[k]===r);
+    if(owner!==undefined && selL===null){ delete pairs[owner]; paint(); return; }
+    if(selL===null){ toast('Primero toca una situación de la izquierda'); return; }
+    if(owner!==undefined) delete pairs[owner];
+    pairs[selL]=r; $$('[data-l]',wrap).forEach(x=>x.classList.remove('sel')); selL=null; paint();
+  }));
+  addBtn(btns,'Reiniciar',()=>renderMatch(id),'btn ghost');
+  addBtn(btns,'Comprobar',()=>{
+    const n=Object.keys(pairs).length;
+    if(n<a.pairs.length){ fb.innerHTML=`<span class="msg mid">Faltan ${a.pairs.length-n} pares por unir.</span>`; return; }
+    let ok=0; Object.keys(pairs).forEach(l=>{ const g=pairs[l]===l; if(g) ok++; [$(`[data-l="${l}"]`,wrap),$(`[data-r="${pairs[l]}"]`,wrap)].forEach(b=>b.classList.add(g?'ok':'bad')); });
+    feedback(fb, award(id,a.pts*ok/a.pairs.length), a.pts);
+  });
+}
+
+/* ---------- MCQ / V-F ---------- */
+function renderMCQ(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  let answered=0, ok=0;
+  a.qs.forEach((q,qi)=>{
+    const opts=a.tf?['Verdadero','Falso']:q.opts;
+    const box=el('div',{class:'q'},`<div class="q-t"><span>${qi+1}.</span>${esc(q.q)}</div><div class="opts ${a.tf?'row':''}"></div><div class="q-fb" hidden></div>`);
+    const ob=$('.opts',box), qf=$('.q-fb',box);
+    opts.forEach((o,oi)=>{
+      const b=el('button',{type:'button',class:'opt'},esc(o));
+      b.addEventListener('click',()=>{
+        $$('.opt',ob).forEach(x=>x.disabled=true);
+        const good=oi===q.a; b.classList.add(good?'ok':'bad'); if(!good) $$('.opt',ob)[q.a].classList.add('ok');
+        qf.hidden=false; qf.className='q-fb '+(good?'ok':'bad'); qf.textContent=(good?'✔ ':'✘ ')+q.fb;
+        answered++; if(good) ok++;
+        if(answered===a.qs.length){ feedback(fb, award(id,a.pts*ok/a.qs.length), a.pts); }
+      });
+      ob.appendChild(b);
+    });
+    body.appendChild(box);
+  });
+  addBtn(btns,'Volver a intentar',()=>renderMCQ(id),'btn ghost');
+}
+
+/* ---------- FILL ---------- */
+function renderFill(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const answers=[]; a.text.replace(/\[\[(.+?)\]\]/g,(m,w)=>answers.push(w));
+  const bank=shuffle(answers.concat(a.extra)).sort((x,y)=>x.localeCompare(y,'es'));
+  let k=0;
+  const html=esc(a.text).replace(/\[\[(.+?)\]\]/g,()=>`<select data-k="${k++}" aria-label="Espacio ${k}"><option value="">———</option>${bank.map(w=>`<option>${esc(w)}</option>`).join('')}</select>`);
+  body.innerHTML=`<p class="fill">${html}</p>`;
+  $$('select',body).forEach(s=>s.addEventListener('change',()=>{ s.classList.remove('ok','bad'); fb.innerHTML=''; }));
+  addBtn(btns,'Limpiar',()=>renderFill(id),'btn ghost');
+  addBtn(btns,'Comprobar',()=>{
+    const sels=$$('select',body); const empty=sels.filter(s=>!s.value).length;
+    if(empty){ fb.innerHTML=`<span class="msg mid">Faltan ${empty} espacio${empty>1?'s':''} por completar.</span>`; return; }
+    let ok=0; sels.forEach(s=>{ const g=s.value===answers[+s.dataset.k]; s.classList.toggle('ok',g); s.classList.toggle('bad',!g); if(g) ok++; });
+    feedback(fb, award(id,a.pts*ok/answers.length), a.pts);
+  });
+}
+
+/* ---------- FIVE WHYS ---------- */
+function renderWhys(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  let mistakes=0;
+  const box=el('div',{class:'whys'});
+  box.appendChild(el('div',{class:'why-step'},`<div class="lvl">Síntoma</div><div class="st">${esc(a.start)}</div>`));
+  body.appendChild(box);
+  function level(i){
+    if(i>=a.levels.length){
+      box.appendChild(el('div',{class:'why-root'},`<b>¡Llegaste a la causa raíz!</b><p style="margin:.4em 0 0">${esc(a.root)}</p>`));
+      const pts=award(id, a.pts - mistakes*2);
+      feedback(fb,pts,a.pts, mistakes?` <span style="color:var(--muted);font-size:.88rem">(−2 por cada respuesta trampa: ${mistakes})</span>`:'');
+      return;
+    }
+    const L=a.levels[i];
+    const st=el('div',{class:'why-step'},`<div class="lvl">¿Por qué? · nivel ${i+1}</div><div class="opts"></div><div class="q-fb" hidden></div>`);
+    const ob=$('.opts',st), qf=$('.q-fb',st);
+    shuffle(L.opts.map((o,k)=>({o,k}))).forEach(({o,k})=>{
+      const b=el('button',{type:'button',class:'opt'},esc(o));
+      b.addEventListener('click',()=>{
+        if(k===L.a){ $$('.opt',ob).forEach(x=>{ x.disabled=true; if(x!==b) x.style.display='none'; }); b.classList.add('ok'); qf.hidden=true; level(i+1); }
+        else { mistakes++; b.classList.add('bad'); b.disabled=true; qf.hidden=false; qf.className='q-fb bad'; qf.textContent='Trampa: '+L.fb[k]; }
+      });
+      ob.appendChild(b);
+    });
+    box.appendChild(st);
+  }
+  level(0);
+  addBtn(btns,'Empezar de nuevo',()=>renderWhys(id),'btn ghost');
+}
+
+/* ---------- OBJECTIVE BUILDER ---------- */
+function renderBuilder(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const list = S.data.objs || (S.data.objs=[]);
+  body.innerHTML=`<div class="builder">
+    <label>Verbo<select data-f="v"><option value="">Elige…</option><option>Reducir</option><option>Aumentar</option><option>Automatizar</option><option>Disminuir</option><option>Integrar</option><option>Lograr</option></select></label>
+    <label>Indicador<select data-f="i"><option value="">Elige…</option><option>el tiempo promedio de aprobación</option><option>el porcentaje de aprobaciones automáticas</option><option>las solicitudes abandonadas</option><option>las quejas mensuales de clientes</option><option>el porcentaje de clientes notificados a tiempo</option><option>la cartera de clientes activos</option></select></label>
+    <label>Meta (con número)<input type="text" data-f="m" placeholder="ej. a menos de 4 horas / en un 30 %"></label>
+    <label>Plazo<select data-f="p"><option value="">Elige…</option><option>en los próximos 3 meses</option><option>durante el primer semestre de 2027</option><option>antes de junio de 2027</option><option>en el plazo de un año</option></select></label>
+    <label>Requisito mínimo de aceptación<input type="text" data-f="min" placeholder="ej. 8 horas como máximo"></label>
+    <label>Nivel de aspiración (óptimo)<input type="text" data-f="asp" placeholder="ej. 2 horas o menos"></label>
+  </div>
+  <div class="preview" aria-live="polite"></div>
+  <ul class="olog"></ul>`;
+  const f=k=>$(`[data-f="${k}"]`,body);
+  const prev=$('.preview',body), log=$('.olog',body);
+  function sentence(){ const v=f('v').value,i=f('i').value,m=f('m').value.trim(),p=f('p').value; return (v||i||m||p)?`${v||'[verbo]'} ${i||'[indicador]'} ${m||'[meta]'} ${p||'[plazo]'}.`:'Tu objetivo aparecerá aquí mientras lo construyes.'; }
+  function upd(){ prev.textContent=sentence(); }
+  $$('select,input',body).forEach(x=>x.addEventListener('input',upd)); upd();
+  function draw(){ log.innerHTML=list.map((o,k)=>`<li>${k+1}. ${esc(o.s)}<small>Mínimo aceptable: ${esc(o.min||'—')} · Aspiración: ${esc(o.asp||'—')}</small></li>`).join(''); }
+  draw();
+  addBtn(btns,'Borrar objetivos',()=>{ S.data.objs=[]; save(); renderBuilder(id); },'btn ghost');
+  addBtn(btns,'Agregar objetivo',()=>{
+    const v=f('v').value,i=f('i').value,m=f('m').value.trim(),p=f('p').value;
+    const miss=[]; if(!v)miss.push('verbo'); if(!i)miss.push('indicador'); if(!m)miss.push('meta'); if(!p)miss.push('plazo');
+    if(miss.length){ fb.innerHTML=`<span class="msg mid">Falta: ${miss.join(', ')}.</span>`; return; }
+    if(!/\d/.test(m)){ fb.innerHTML=`<span class="msg bad">La meta necesita un número para ser medible (ej. «a menos de 4 horas»).</span>`; return; }
+    if(!f('min').value.trim()||!f('asp').value.trim()){ fb.innerHTML=`<span class="msg mid">Completa el requisito mínimo de aceptación y el nivel de aspiración.</span>`; return; }
+    const s=sentence();
+    if(list.some(o=>o.s===s)){ fb.innerHTML=`<span class="msg mid">Ese objetivo ya está en la lista.</span>`; return; }
+    if(list.length>=5){ fb.innerHTML=`<span class="msg mid">Ya tienes 5 objetivos; con 3 es suficiente.</span>`; return; }
+    list.push({s,i,min:f('min').value.trim(),asp:f('asp').value.trim()}); save(); draw(); if(window.__mcmRefresh && !(S.data.mcm&&S.data.mcm.crit)) window.__mcmRefresh();
+    $$('input',body).forEach(x=>x.value=''); $$('select',body).forEach(x=>x.value=''); upd();
+    const pts=award(id, a.pts*Math.min(list.length,3)/3);
+    fb.innerHTML=`<span class="msg ${list.length>=3?'ok':'mid'}"><b>${pts}/${a.pts} pts</b> · ${list.length>=3?'¡Tres objetivos medibles listos! Se usarán como criterios en la Actividad 18.':`Objetivo agregado. Llevas ${list.length} de 3.`}</span>`;
+  });
+}
+
+/* ---------- BRAINSTORM ---------- */
+function renderBrain(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const ideas = S.data.ideas || (S.data.ideas=[]);
+  let left=240, tick=null;
+  body.innerHTML=`<div class="bs-top"><span class="bs-clock">4:00</span><button type="button" class="btn warm" data-x="go">Iniciar reloj</button><span class="count-ring"></span></div>
+    <div class="bs-in"><input type="text" maxlength="120" placeholder="Escribe una idea y presiona Enter" aria-label="Nueva idea"><button type="button" class="btn" data-x="add">Agregar</button></div>
+    <div class="notes"></div>`;
+  const clock=$('.bs-clock',body), go=$('[data-x="go"]',body), inp=$('input',body), notes=$('.notes',body), cnt=$('.count-ring',body);
+  function fmt(s){ return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
+  function draw(){
+    notes.innerHTML=''; ideas.forEach((t,k)=>{ const n=el('div',{class:'sticky'},esc(t)); const x=el('button',{type:'button','aria-label':'Quitar idea'},'×'); x.addEventListener('click',()=>{ ideas.splice(k,1); save(); draw(); }); n.appendChild(x); notes.appendChild(n); });
+    cnt.textContent=`${ideas.length} idea${ideas.length===1?'':'s'} · meta: 8`;
+  }
+  function add(){ const t=inp.value.trim(); if(!t) return; ideas.push(t); inp.value=''; save(); draw(); inp.focus();
+    const pts=award(id,a.pts*Math.min(ideas.length,8)/8);
+    if(ideas.length===8){ fb.innerHTML=`<span class="msg ok"><b>${pts}/${a.pts} pts</b> · ¡Meta alcanzada! Sigue si tienes más ideas.</span>`; toast('¡8 ideas! Meta alcanzada'); }
+    else fb.innerHTML=`<span class="msg mid"><b>${pts}/${a.pts} pts</b> · Llevas ${ideas.length}.</span>`; }
+  go.addEventListener('click',()=>{
+    if(tick){ clearInterval(tick); tick=null; go.textContent='Continuar'; return; }
+    if(left<=0) left=240;
+    go.textContent='Pausar'; inp.focus();
+    tick=setInterval(()=>{ left--; clock.textContent=fmt(left); if(left<=0){ clearInterval(tick); tick=null; go.textContent='Reiniciar reloj'; toast('¡Tiempo! Revisen sus ideas en grupo'); } },1000);
+  });
+  $('[data-x="add"]',body).addEventListener('click',add);
+  inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); add(); } });
+  draw();
+  addBtn(btns,'Borrar ideas',()=>{ if(confirm('¿Borrar todas las ideas?')){ S.data.ideas=[]; save(); clearInterval(tick); renderBrain(id);} },'btn ghost');
+}
+
+/* ---------- SCAMPER ---------- */
+function renderScamper(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const ans = S.data.scamper || (S.data.scamper={});
+  const cols=['#2E2F92','#14875F','#C2410C','#7C3AED','#0E7490','#BE185D','#B26A00'];
+  const seg=360/SCAMPER.length;
+  const grad=SCAMPER.map((s,i)=>`${cols[i]} ${i*seg}deg ${(i+1)*seg}deg`).join(',');
+  body.innerHTML=`<div class="scamper"><div><div class="wheel-box"><div class="pin"></div><div class="wheel" style="background:conic-gradient(${grad})">${SCAMPER.map((s,i)=>`<span style="transform:rotate(${i*seg+seg/2-90}deg) translate(70px,-10px) rotate(${-(i*seg+seg/2-90)}deg)">${s.l}</span>`).join('')}</div></div>
+    <div style="text-align:center;margin-top:12px"><button type="button" class="btn warm" data-x="spin">Girar la ruleta</button></div></div>
+    <div style="width:100%"><div class="sc-card" aria-live="polite"><h4>Gira para empezar</h4><p style="margin:0;color:var(--muted)">Cada letra es una forma distinta de transformar el proceso actual.</p></div>
+    <div class="letters"></div></div></div>`;
+  const wheel=$('.wheel',body), card=$('.sc-card',body), letters=$('.letters',body);
+  let rot=0, busy=false;
+  function drawLetters(){ letters.innerHTML=SCAMPER.map(s=>`<b class="${ans[s.l]?'done':''}" title="${s.n}">${s.l}</b>`).join(''); }
+  function show(i){
+    const s=SCAMPER[i];
+    card.innerHTML=`<h4>${s.l} · ${s.n}</h4><p>${s.q}</p><textarea aria-label="Tu idea">${esc(ans[s.l]||'')}</textarea><div style="margin-top:8px"><button type="button" class="btn">Guardar idea</button></div>`;
+    $('button',card).addEventListener('click',()=>{
+      const v=$('textarea',card).value.trim(); if(v.length<8){ toast('Escribe una idea un poco más completa'); return; }
+      ans[s.l]=v; save(); drawLetters();
+      const n=Object.keys(ans).length; const pts=award(id,a.pts*Math.min(n,4)/4);
+      fb.innerHTML=`<span class="msg ${n>=4?'ok':'mid'}"><b>${pts}/${a.pts} pts</b> · ${n>=4?'¡Listo! Puedes seguir girando si quieres más ideas.':`Llevas ${n} de 4 letras.`}</span>`;
+    });
+  }
+  $('[data-x="spin"]',body).addEventListener('click',()=>{
+    if(busy) return; busy=true;
+    const pending=SCAMPER.map((s,i)=>i).filter(i=>!ans[SCAMPER[i].l]);
+    const pool=pending.length?pending:SCAMPER.map((s,i)=>i);
+    const i=pool[Math.floor(Math.random()*pool.length)];
+    const target = 360 - (i*seg + seg/2);
+    rot = rot - (rot%360) + 360*4 + target;
+    wheel.style.transform=`rotate(${rot}deg)`;
+    const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    setTimeout(()=>{ busy=false; show(i); }, reduce?50:2650);
+  });
+  drawLetters();
+  addBtn(btns,'Borrar respuestas',()=>{ S.data.scamper={}; save(); renderScamper(id); },'btn ghost');
+}
+
+/* ---------- MORPHOLOGICAL BOX ---------- */
+const ALT_COLORS=['var(--c1)','var(--c3)','var(--c2)','var(--c4)'];
+function renderMorph(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const alts = S.data.alts || (S.data.alts=[]);
+  const pick = MORPH.map(()=>null);
+  const total=MORPH.reduce((p,r)=>p*r.m.length,1);
+  const maxCols=Math.max(...MORPH.map(r=>r.m.length));
+  body.innerHTML=`<div class="morph tbl-wrap"><table><thead><tr><th>Función</th>${Array.from({length:maxCols},(_, i)=>`<th>Medio ${String.fromCharCode(65+i)}</th>`).join('')}</tr></thead><tbody>${
+    MORPH.map((r,ri)=>`<tr><td class="f">${r.f}</td>${Array.from({length:maxCols},(_,mi)=> r.m[mi]!==undefined?`<td class="m" data-r="${ri}" data-m="${mi}" tabindex="0" role="button">${esc(r.m[mi])}<div class="dots"></div></td>`:'<td></td>').join('')}</tr>`).join('')
+  }</tbody></table></div>
+  <div class="combo"><span>Combinaciones posibles:</span><span class="big">${MORPH.map(r=>r.m.length).join(' × ')} = ${total}</span></div>
+  <div class="combo"><input type="text" maxlength="40" placeholder="Nombre de la alternativa (ej. «Crédito Exprés»)" aria-label="Nombre de la alternativa" style="flex:1;min-width:200px"><button type="button" class="btn" data-x="save">Guardar alternativa</button></div>
+  <div class="alts"></div>`;
+  const name=$('input',body), altsBox=$('.alts',body);
+  function paint(){
+    $$('td.m',body).forEach(td=>{ const r=+td.dataset.r,m=+td.dataset.m; td.classList.toggle('on',pick[r]===m);
+      $('.dots',td).innerHTML=alts.map((al,k)=>al.p[r]===m?`<i style="background:${ALT_COLORS[k%4]}" title="${esc(al.n)}"></i>`:'').join(''); });
+    altsBox.innerHTML=alts.map((al,k)=>`<div class="alt" style="border-top:5px solid ${ALT_COLORS[k%4]}"><h4>${esc(al.n)}<button type="button" data-del="${k}" aria-label="Eliminar">×</button></h4><ul>${al.p.map((m,r)=>`<li>${esc(MORPH[r].m[m])}</li>`).join('')}</ul></div>`).join('');
+    $$('[data-del]',altsBox).forEach(b=>b.addEventListener('click',()=>{ alts.splice(+b.dataset.del,1); save(); paint(); }));
+  }
+  $$('td.m',body).forEach(td=>{ const f=()=>{ pick[+td.dataset.r]=+td.dataset.m; paint(); }; td.addEventListener('click',f); td.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); f(); } }); });
+  $('[data-x="save"]',body).addEventListener('click',()=>{
+    const miss=pick.filter(x=>x===null).length;
+    if(miss){ fb.innerHTML=`<span class="msg mid">Elige un medio en cada fila (faltan ${miss}).</span>`; return; }
+    if(alts.length>=4){ fb.innerHTML=`<span class="msg mid">Máximo 4 alternativas. Elimina una para agregar otra.</span>`; return; }
+    const key=pick.join(',');
+    if(alts.some(al=>al.p.join(',')===key)){ fb.innerHTML=`<span class="msg bad">Esa combinación ya existe. Las alternativas deben ser diferentes.</span>`; return; }
+    const n=name.value.trim()||('Alternativa '+String.fromCharCode(65+alts.length));
+    alts.push({n,p:pick.slice()}); save();
+    for(let i=0;i<pick.length;i++) pick[i]=null; name.value=''; paint();
+    const pts=award(id,a.pts*Math.min(alts.length,3)/3);
+    fb.innerHTML=`<span class="msg ${alts.length>=3?'ok':'mid'}"><b>${pts}/${a.pts} pts</b> · ${alts.length>=3?'¡Tres alternativas listas! Ahora evalúalas en la Actividad 18.':`Guardada. Llevas ${alts.length} de 3.`}</span>`;
+    if(window.__mcmRefresh) window.__mcmRefresh();
+  });
+  paint();
+  addBtn(btns,'Borrar alternativas',()=>{ S.data.alts=[]; save(); renderMorph(id); if(window.__mcmRefresh) window.__mcmRefresh(); },'btn ghost');
+}
+
+/* ---------- MULTICRITERIA ---------- */
+function renderMCM(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const D = S.data.mcm || (S.data.mcm={crit:null, w:{}, sc:{}});
+  function alts(){ const al=(S.data.alts||[]).map(x=>x.n); return al.length>=2?al:['Alternativa A','Alternativa B','Alternativa C']; }
+  function crits(){
+    if(D.crit) return D.crit;
+    const fromObj=(S.data.objs||[]).map(o=>o.i).filter((v,i,arr)=>v&&arr.indexOf(v)===i).slice(0,3).map(s=>{ s=s.replace(/^(el|la|las|los) /i,''); return s.charAt(0).toUpperCase()+s.slice(1); });
+    const base=fromObj.length?fromObj:['Tiempo de aprobación','Facilidad de uso para el cliente'];
+    return base.concat(['Costo de implementación','Cumplimiento normativo']).slice(0,5);
+  }
+  function draw(){
+    const A=alts(), C=crits();
+    const usingDefault=(S.data.alts||[]).length<2;
+    body.innerHTML=`${usingDefault?'<p style="font-size:.9rem;color:var(--muted)">Aún no guardas alternativas en la caja morfológica; se usan nombres genéricos. Al guardarlas, aparecerán aquí automáticamente.</p>':''}
+    <div class="tbl-wrap mcm"><table><thead><tr><th>Criterio</th><th>Peso %</th>${A.map(n=>`<th>${esc(n)}</th>`).join('')}</tr></thead><tbody>
+    ${C.map((c,ci)=>`<tr><td><input type="text" data-c="${ci}" value="${esc(c)}" aria-label="Criterio ${ci+1}" style="width:100%;min-width:150px"></td><td><input type="number" min="0" max="100" step="5" data-w="${ci}" value="${D.w[ci]??''}" aria-label="Peso"></td>${A.map((n,ai)=>`<td><select data-s="${ci}-${ai}" aria-label="Puntaje"><option value="">–</option>${[1,2,3,4,5].map(v=>`<option ${D.sc[ci+'-'+ai]==v?'selected':''}>${v}</option>`).join('')}</select></td>`).join('')}</tr>`).join('')}
+    <tr><td><b>Suma de pesos</b></td><td class="sum">0</td>${A.map(()=>'<td></td>').join('')}</tr></tbody></table></div>
+    <div class="bars"></div>`;
+    $$('[data-c]',body).forEach(i=>i.addEventListener('change',()=>{ const cs=crits().slice(); cs[+i.dataset.c]=i.value.trim()||cs[+i.dataset.c]; D.crit=cs; save(); }));
+    $$('[data-w]',body).forEach(i=>i.addEventListener('input',()=>{ D.w[i.dataset.w]=i.value===''?undefined:+i.value; save(); calc(); }));
+    $$('[data-s]',body).forEach(s=>s.addEventListener('change',()=>{ D.sc[s.dataset.s]=s.value?+s.value:undefined; save(); calc(); }));
+    calc();
+  }
+  function calc(){
+    const A=alts(), C=crits();
+    const sum=C.reduce((s,c,ci)=>s+(+D.w[ci]||0),0);
+    const sc=$('.sum',body); sc.textContent=sum+' %'; sc.className='sum '+(sum===100?'ok':'bad');
+    const tot=A.map((n,ai)=>C.reduce((s,c,ci)=>s+(+D.w[ci]||0)/100*(+D.sc[ci+'-'+ai]||0),0));
+    const best=Math.max(...tot);
+    $('.bars',body).innerHTML=A.map((n,ai)=>`<div class="barrow ${best>0&&tot[ai]===best?'win':''}"><span>${esc(n)}</span><span class="b"><i style="width:${tot[ai]/5*100}%"></i></span><b>${tot[ai].toFixed(2)}</b></div>`).join('');
+  }
+  window.__mcmRefresh=draw;
+  draw();
+  addBtn(btns,'Reiniciar matriz',()=>{ S.data.mcm={crit:null,w:{},sc:{}}; save(); renderMCM(id); },'btn ghost');
+  addBtn(btns,'Comprobar',()=>{
+    const A=alts(), C=crits(); const D2=S.data.mcm;
+    const sum=C.reduce((s,c,ci)=>s+(+D2.w[ci]||0),0);
+    const missing=C.reduce((s,c,ci)=>s+A.filter((n,ai)=>!D2.sc[ci+'-'+ai]).length,0);
+    const zeroW=C.filter((c,ci)=>!(+D2.w[ci])).length;
+    if(sum!==100){ fb.innerHTML=`<span class="msg bad">Los pesos suman ${sum} %. Ajusta para que sumen exactamente 100 %.</span>`; return; }
+    if(missing){ fb.innerHTML=`<span class="msg mid">Faltan ${missing} calificaciones.</span>`; return; }
+    let pts=a.pts; let extra='';
+    if((S.data.alts||[]).length<3){ pts-=3; extra=' Usa tus tres alternativas de la Actividad 17 para obtener el puntaje completo.'; }
+    if(zeroW){ extra+=' Hay criterios con peso 0: si no importan, ¿para qué están?'; }
+    const tot=A.map((n,ai)=>C.reduce((s,c,ci)=>s+(+D2.w[ci])/100*(+D2.sc[ci+'-'+ai]),0));
+    const best=A[tot.indexOf(Math.max(...tot))];
+    pts=award(id,pts);
+    fb.innerHTML=`<span class="msg ${pts===a.pts?'ok':'mid'}"><b>${pts}/${a.pts} pts</b> · Mejor desempeño relativo: <b>${esc(best)}</b>.${extra}</span>`;
+  });
+}
+
+/* ---------- CROSSWORD ---------- */
+function buildCross(words){
+  const grid=new Map(), dirs=new Map(); const key=(r,c)=>r+','+c;
+  const placed=[];
+  function fits(w,r,c,d){
+    const dr=d?1:0, dc=d?0:1; let inter=0;
+    if(grid.has(key(r-dr,c-dc))||grid.has(key(r+dr*w.length,c+dc*w.length))) return -1;
+    for(let i=0;i<w.length;i++){
+      const rr=r+dr*i, cc=c+dc*i, g=grid.get(key(rr,cc));
+      if(g){ if(g!==w[i]) return -1; if((dirs.get(key(rr,cc))||'').includes(d?'d':'a')) return -1; inter++; }
+      else if(grid.has(key(rr+dc,cc+dr))||grid.has(key(rr-dc,cc-dr))) return -1;
+    }
+    return inter;
+  }
+  function put(item,r,c,d){
+    const dr=d?1:0, dc=d?0:1;
+    for(let i=0;i<item.w.length;i++){ const k=key(r+dr*i,c+dc*i); grid.set(k,item.w[i]); dirs.set(k,(dirs.get(k)||'')+(d?'d':'a')); }
+    placed.push({...item,r,c,d});
+  }
+  const list=words.slice();
+  put(list[0],0,0,0);
+  for(let n=1;n<list.length;n++){
+    const it=list[n]; let best=null;
+    for(const [k,ch] of grid){
+      const [r,c]=k.split(',').map(Number);
+      for(let j=0;j<it.w.length;j++){ if(it.w[j]!==ch) continue;
+        for(const d of [0,1]){ const r0=r-(d?j:0), c0=c-(d?0:j); const s=fits(it.w,r0,c0,d);
+          if(s>0){ // compactness score
+            let minR=r0,maxR=r0+(d?it.w.length-1:0),minC=c0,maxC=c0+(d?0:it.w.length-1);
+            placed.forEach(p=>{ minR=Math.min(minR,p.r); maxR=Math.max(maxR,p.r+(p.d?p.w.length-1:0)); minC=Math.min(minC,p.c); maxC=Math.max(maxC,p.c+(p.d?0:p.w.length-1)); });
+            const area=(maxR-minR+1)*(maxC-minC+1); const score=s*100-area-Math.abs((maxR-minR)-(maxC-minC))*3;
+            if(!best||score>best.score) best={r:r0,c:c0,d,score};
+          } }
+      }
+    }
+    if(best) put(it,best.r,best.c,best.d);
+  }
+  const minR=Math.min(...placed.map(p=>p.r)), minC=Math.min(...placed.map(p=>p.c));
+  placed.forEach(p=>{ p.r-=minR; p.c-=minC; });
+  const rows=Math.max(...placed.map(p=>p.r+(p.d?p.w.length:1))), cols=Math.max(...placed.map(p=>p.c+(p.d?1:p.w.length)));
+  // numbering
+  const starts={}; let num=0;
+  placed.slice().sort((a,b)=>a.r-b.r||a.c-b.c).forEach(p=>{ const k=key(p.r,p.c); if(!starts[k]) starts[k]=++num; p.num=starts[k]; });
+  return {placed,rows,cols,starts};
+}
+function renderCross(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const X=buildCross(a.words.map(o=>({w:o.w,clue:o.c})));
+  const cell={}; X.placed.forEach((p,pi)=>{ for(let i=0;i<p.w.length;i++){ const r=p.r+(p.d?i:0), c=p.c+(p.d?0:i); const k=r+','+c; cell[k]=cell[k]||{ch:p.w[i],words:[]}; cell[k].words.push(pi); } });
+  let dir=0, active=null;
+  let html=`<div class="cw-wrap"><div class="cw-scroll"><div class="cw" style="grid-template-columns:repeat(${X.cols},auto)">`;
+  for(let r=0;r<X.rows;r++) for(let c=0;c<X.cols;c++){ const k=r+','+c;
+    html+= cell[k]?`<div class="c">${X.starts[k]?`<sup>${X.starts[k]}</sup>`:''}<input maxlength="1" data-k="${k}" aria-label="Casilla ${r+1},${c+1}" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>`:'<div class="c x"></div>'; }
+  html+=`</div></div><div class="clues"><h4>Horizontales</h4><ol>${X.placed.map((p,pi)=>({p,pi})).filter(o=>!o.p.d).sort((x,y)=>x.p.num-y.p.num).map(o=>`<li data-w="${o.pi}"><b>${o.p.num}</b>${esc(o.p.clue)} (${o.p.w.length})</li>`).join('')}</ol>
+    <h4>Verticales</h4><ol>${X.placed.map((p,pi)=>({p,pi})).filter(o=>o.p.d).sort((x,y)=>x.p.num-y.p.num).map(o=>`<li data-w="${o.pi}"><b>${o.p.num}</b>${esc(o.p.clue)} (${o.p.w.length})</li>`).join('')}</ol></div></div>`;
+  body.innerHTML=html;
+  const inp=k=>$(`input[data-k="${k}"]`,body);
+  function cellsOf(pi){ const p=X.placed[pi]; return Array.from({length:p.w.length},(_,i)=>(p.r+(p.d?i:0))+','+(p.c+(p.d?0:i))); }
+  function highlight(pi){ $$('.cw input',body).forEach(x=>x.classList.remove('hl')); if(pi==null) return; cellsOf(pi).forEach(k=>inp(k).classList.add('hl')); }
+  function wordAt(k){ const ws=cell[k].words; const w=ws.find(pi=>X.placed[pi].d===dir); return w!==undefined?w:ws[0]; }
+  $$('.cw input',body).forEach(x=>{
+    x.addEventListener('focus',()=>{ active=wordAt(x.dataset.k); dir=X.placed[active].d; highlight(active); });
+    x.addEventListener('click',()=>{ const ws=cell[x.dataset.k].words; if(ws.length>1){ dir=dir?0:1; active=wordAt(x.dataset.k); highlight(active);} });
+    x.addEventListener('input',()=>{
+      x.value=x.value.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^A-ZÑ]/g,'').slice(-1);
+      x.classList.remove('ok','bad'); fb.innerHTML='';
+      if(x.value && active!=null){ const cs=cellsOf(active); const i=cs.indexOf(x.dataset.k); if(i>-1&&i<cs.length-1) inp(cs[i+1]).focus(); }
+    });
+    x.addEventListener('keydown',e=>{
+      if(e.key==='Backspace'&&!x.value&&active!=null){ const cs=cellsOf(active); const i=cs.indexOf(x.dataset.k); if(i>0){ e.preventDefault(); const p=inp(cs[i-1]); p.value=''; p.focus(); } }
+      const [r,c]=x.dataset.k.split(',').map(Number); const mv={ArrowRight:[0,1],ArrowLeft:[0,-1],ArrowDown:[1,0],ArrowUp:[-1,0]}[e.key];
+      if(mv){ const t=inp((r+mv[0])+','+(c+mv[1])); if(t){ e.preventDefault(); dir=mv[0]?1:0; t.focus(); } }
+    });
+  });
+  $$('.clues li',body).forEach(li=>li.addEventListener('click',()=>{ const pi=+li.dataset.w; dir=X.placed[pi].d; const cs=cellsOf(pi); const first=cs.find(k=>!inp(k).value)||cs[0]; inp(first).focus(); active=pi; highlight(pi); }));
+  addBtn(btns,'Limpiar',()=>renderCross(id),'btn ghost');
+  addBtn(btns,'Mostrar una letra',()=>{ const empty=$$('.cw input',body).filter(x=>!x.value||x.classList.contains('bad')); if(!empty.length) return; const x=empty[Math.floor(Math.random()*empty.length)]; x.value=cell[x.dataset.k].ch; x.classList.remove('bad'); x.dataset.hint='1'; toast('Pista usada: −1 punto al comprobar'); },'btn ghost');
+  addBtn(btns,'Comprobar',()=>{
+    let ok=0; $$('.cw input',body).forEach(x=>{ if(x.value){ const g=x.value===cell[x.dataset.k].ch; x.classList.toggle('ok',g); x.classList.toggle('bad',!g); } });
+    X.placed.forEach((p,pi)=>{ const solved=cellsOf(pi).every(k=>inp(k).value===cell[k].ch); $(`.clues li[data-w="${pi}"]`,body).classList.toggle('solved',solved); if(solved) ok++; });
+    const hints=$$('.cw input[data-hint]',body).length;
+    feedback(fb, award(id, a.pts*ok/X.placed.length - hints), a.pts, ` <span style="font-size:.88rem;color:var(--muted)">${ok}/${X.placed.length} palabras${hints?` · ${hints} pista(s)`:''}</span>`);
+  });
+}
+
+/* ---------- WORD SEARCH ---------- */
+function renderWS(id){
+  const a=ACTS[id]; const {body,fb,btns}=shell(id);
+  const N=12, words=a.words.slice().sort((x,y)=>y.length-x.length);
+  const D=[[0,1],[1,0],[1,1],[-1,1]];
+  let G, pos;
+  for(let attempt=0;attempt<60;attempt++){
+    G=Array.from({length:N},()=>Array(N).fill('')); pos={}; let okAll=true;
+    for(const w of words){ let done=false;
+      for(let t=0;t<300&&!done;t++){ const [dr,dc]=D[Math.floor(Math.random()*D.length)];
+        const r=Math.floor(Math.random()*N), c=Math.floor(Math.random()*N); const er=r+dr*(w.length-1), ec=c+dc*(w.length-1);
+        if(er<0||er>=N||ec<0||ec>=N) continue;
+        let fit=true; for(let i=0;i<w.length;i++){ const ch=G[r+dr*i][c+dc*i]; if(ch&&ch!==w[i]){fit=false;break;} }
+        if(!fit) continue;
+        for(let i=0;i<w.length;i++) G[r+dr*i][c+dc*i]=w[i]; pos[w]={r,c,dr,dc}; done=true; }
+      if(!done){ okAll=false; break; } }
+    if(okAll) break;
+  }
+  const AL='ABCDEFGHIJLMNOPRSTUV';
+  for(let r=0;r<N;r++) for(let c=0;c<N;c++) if(!G[r][c]) G[r][c]=AL[Math.floor(Math.random()*AL.length)];
+  const found=new Set(); const colors=['#2E2F92','#14875F','#C2410C','#7C3AED','#0E7490','#BE185D','#B26A00','#1D4ED8','#15803D','#9D174D'];
+  body.innerHTML=`<div class="ws-wrap"><div class="ws" style="grid-template-columns:repeat(${N},auto)">${G.map((row,r)=>row.map((ch,c)=>`<span data-r="${r}" data-c="${c}">${ch}</span>`).join('')).join('')}</div>
+    <div><ul class="wlist">${a.words.map(w=>`<li data-w="${w}">${w}</li>`).join('')}</ul><p class="count-ring" style="margin-top:12px">0 de ${a.words.length} encontradas</p></div></div>`;
+  const ws=$('.ws',body), cnt=$('.count-ring',body);
+  const cellEl=(r,c)=>$(`span[data-r="${r}"][data-c="${c}"]`,ws);
+  let start=null, line=[], dragging=false, moved=false;
+  function lineTo(r,c){
+    const dr=Math.sign(r-start.r), dc=Math.sign(c-start.c), lr=Math.abs(r-start.r), lc=Math.abs(c-start.c);
+    if(!(lr===0||lc===0||lr===lc)) return null;
+    const len=Math.max(lr,lc); return Array.from({length:len+1},(_,i)=>[start.r+dr*i,start.c+dc*i]);
+  }
+  function showLine(l){ $$('.cur',ws).forEach(s=>s.classList.remove('cur')); (l||[]).forEach(([r,c])=>cellEl(r,c).classList.add('cur')); }
+  function finish(l){
+    showLine(null); if(!l||l.length<2) return false;
+    const s=l.map(([r,c])=>G[r][c]).join(''), rs=s.split('').reverse().join('');
+    const w=a.words.find(x=>(x===s||x===rs)&&!found.has(x));
+    if(w){ found.add(w); const col=colors[found.size%colors.length]; l.forEach(([r,c])=>{ const e=cellEl(r,c); e.classList.add('found'); e.style.background=col; });
+      $(`li[data-w="${w}"]`,body).classList.add('found'); cnt.textContent=`${found.size} de ${a.words.length} encontradas`;
+      const pts=award(id,a.pts*found.size/a.words.length);
+      fb.innerHTML=`<span class="msg ${found.size===a.words.length?'ok':'mid'}"><b>${pts}/${a.pts} pts</b> · ${found.size===a.words.length?'¡Encontraste todas!':'¡'+w+'!'}</span>`;
+      return true; }
+    return false;
+  }
+  function cellFromPoint(e){ const t=document.elementFromPoint(e.clientX,e.clientY); return t&&t.closest&&t.closest('.ws span'); }
+  ws.addEventListener('pointerdown',e=>{
+    const t=cellFromPoint(e); if(!t) return; e.preventDefault();
+    const r=+t.dataset.r,c=+t.dataset.c;
+    if(start && !dragging){ const l=lineTo(r,c); if(l&&l.length>1){ finish(l); start=null; return; } }
+    start={r,c}; dragging=true; moved=false; line=[[r,c]]; showLine(line);
+  });
+  ws.addEventListener('pointermove',e=>{ if(!dragging) return; const t=cellFromPoint(e); if(!t) return; const l=lineTo(+t.dataset.r,+t.dataset.c); if(l){ if(l.length>1) moved=true; line=l; showLine(l);} });
+  window.addEventListener('pointerup',()=>{ if(!dragging) return; dragging=false; if(moved){ finish(line); start=null; } else { showLine([[start.r,start.c]]); } });
+  addBtn(btns,'Nueva sopa',()=>renderWS(id),'btn ghost');
+}
+
+/* =========================================================
+   CUBO DE HALL
+   ========================================================= */
+function initCube(){
+  const cube=$('#cube'), stage=$('#stage'), panel=$('#dimPanel');
+  let rx=-24, ry=-38, drag=null;
+  const seen=new Set();
+  const apply=()=>{ cube.style.transform=`rotateX(${rx}deg) rotateY(${ry}deg)`; };
+  function showDim(d){
+    const D=HALL_DIMS[d]; seen.add(d);
+    panel.innerHTML=`<h3>${D.t}</h3>${D.html}`;
+    $$('.dims button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.dim===d)));
+    rx=D.rot.x; ry=D.rot.y; cube.classList.remove('free'); apply();
+    $('#dimSeen').textContent= seen.size<3?`Has explorado ${seen.size} de 3 dimensiones.`:'Exploraste las tres dimensiones. ¡Ahora a practicar!';
+  }
+  $$('.dims button').forEach(b=>b.addEventListener('click',()=>showDim(b.dataset.dim)));
+  $$('.face[data-dim]').forEach(f=>f.addEventListener('click',()=>{ if(!drag||!drag.moved) showDim(f.dataset.dim); }));
+  stage.addEventListener('pointerdown',e=>{ drag={x:e.clientX,y:e.clientY,rx,ry,moved:false}; cube.classList.add('free'); stage.setPointerCapture(e.pointerId); });
+  stage.addEventListener('pointermove',e=>{ if(!drag) return; const dx=e.clientX-drag.x, dy=e.clientY-drag.y; if(Math.abs(dx)+Math.abs(dy)>4) drag.moved=true; ry=drag.ry+dx*.5; rx=Math.max(-85,Math.min(85,drag.rx-dy*.5)); apply(); });
+  stage.addEventListener('pointerup',e=>{
+    if(drag && !drag.moved){ stage.releasePointerCapture(e.pointerId); const t=document.elementFromPoint(e.clientX,e.clientY); const f=t&&t.closest('.face[data-dim]'); if(f) showDim(f.dataset.dim); }
+    setTimeout(()=>drag=null,0);
+  });
+  apply(); panel.innerHTML=`<h3>${HALL_DIMS.log.t}</h3>${HALL_DIMS.log.html}`; seen.add('log');
+  $('#dimSeen').textContent='Has explorado 1 de 3 dimensiones.';
+}
+
+/* =========================================================
+   RESULTADO
+   ========================================================= */
+function renderResult(){
+  const box=$('#resCard'); if(!box) return;
+  const got=ORDER.reduce((s,id)=>s+(S.scores[id]||0),0);
+  const done=ORDER.filter(id=>S.scores[id]!==undefined).length;
+  const grade=Math.round(got/TOTAL*100);
+  const rows=SECTIONS.filter(s=>secStats(s.id).max).map(s=>{ const st=secStats(s.id); return `<tr><td>${s.t}</td><td>${st.ids.filter(id=>S.scores[id]!==undefined).length}/${st.ids.length}</td><td><b>${st.got}</b>/${st.max}</td></tr>`; }).join('');
+  const now=new Date();
+  box.innerHTML=`<div class="res-top"><div><div style="color:var(--muted);font-size:.9rem">Universidad Nacional de Ingeniería · Ingeniería de Sistemas · Semana 11</div>
+    <h3 style="font-size:1.6rem;margin:.2em 0">${S.name?esc(S.name):'<span style="color:var(--bad)">Escribe tu nombre en la sección 1</span>'}</h3>
+    <div style="color:var(--muted)">${S.group?'Grupo: '+esc(S.group)+' · ':''}${now.toLocaleDateString('es-NI',{day:'numeric',month:'long',year:'numeric'})} ${now.toLocaleTimeString('es-NI',{hour:'2-digit',minute:'2-digit'})}</div></div>
+    <div class="grade">${grade}<small>/100</small></div></div>
+    <p style="margin:0 0 12px">${done} de ${ORDER.length} actividades realizadas · ${got} de ${TOTAL} puntos.</p>
+    <div class="tbl-wrap" style="margin:0"><table><thead><tr><th>Sección</th><th>Actividades</th><th>Puntos</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
+/* =========================================================
+   GUÍA (checklist), NOMBRE, TEMPORIZADOR, MENÚ
+   ========================================================= */
+function initGuide(){
+  $$('.guide-act').forEach(g=>{ $$('input[type=checkbox]',g).forEach((cb,i)=>{ const k=g.dataset.g+'-'+i; cb.checked=!!S.guide[k]; cb.addEventListener('change',()=>{ S.guide[k]=cb.checked; save(); }); }); });
+}
+function initName(){
+  const n=$('#studentName'), g=$('#studentGroup'); n.value=S.name||''; g.value=S.group||'';
+  const sv=()=>{ S.name=n.value.trim(); S.group=g.value.trim(); save(); renderResult(); toast(S.name?`¡Bienvenido/a, ${S.name.split(' ')[0]}!`:'Nombre borrado'); };
+  $('#saveName').addEventListener('click',sv);
+  n.addEventListener('keydown',e=>{ if(e.key==='Enter') sv(); });
+}
+function initTimer(){
+  let left=7200, t=null; const txt=$('#timerTxt'), b=$('#timerBtn'), box=$('#timer');
+  const fmt=s=>`${Math.floor(s/3600)}:${String(Math.floor(s%3600/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+  b.addEventListener('click',()=>{
+    if(t){ clearInterval(t); t=null; b.textContent='Seguir'; return; }
+    if(left<=0) left=7200;
+    b.textContent='Pausa';
+    t=setInterval(()=>{ left--; txt.textContent=fmt(left); box.classList.toggle('warn',left<=600); if(left<=0){ clearInterval(t); t=null; b.textContent='Reiniciar'; toast('¡Terminó el tiempo de la clase!'); } },1000);
+  });
+}
+function initMenu(){
+  const nav=$('#nav'), mb=$('#menuBtn');
+  mb.addEventListener('click',()=>{ const o=nav.classList.toggle('open'); mb.setAttribute('aria-expanded',String(o)); });
+  document.addEventListener('click',e=>{ if(nav.classList.contains('open') && !nav.contains(e.target) && e.target!==mb) { nav.classList.remove('open'); mb.setAttribute('aria-expanded','false'); } });
+  $('#printBtn').addEventListener('click',()=>{ if(!S.name){ toast('Primero escribe tu nombre en la sección 1'); location.hash='#inicio'; setTimeout(()=>$('#studentName').focus(),100); return; } window.print(); });
+  $('#resetBtn').addEventListener('click',()=>{ if(confirm('Se borrarán tus puntos, ideas, objetivos y alternativas guardados en este navegador. ¿Continuar?')){ try{localStorage.removeItem(KEY);}catch(e){} location.hash='#inicio'; location.reload(); } });
+}
+
+/* =========================================================
+   INICIO
+   ========================================================= */
+const R={sort:renderSort,order:renderOrder,match:renderMatch,mcq:renderMCQ,fill:renderFill,whys:renderWhys,builder:renderBuilder,brain:renderBrain,scamper:renderScamper,morph:renderMorph,mcm:renderMCM,cross:renderCross,wsearch:renderWS};
+buildNav();
+ORDER.forEach(id=>{ try{ R[ACTS[id].type](id); }catch(err){ console.error('Actividad',id,err); } });
+initCube(); initGuide(); initName(); initTimer(); initMenu();
+window.addEventListener('hashchange',route);
+route(); refresh();
+})();
+</script>
+</body>
+</html>
